@@ -57,6 +57,9 @@
                                 <state key="normal" title="WEEK 3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LqP-Uc-m23" kind="show" id="rdw-84-nUr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaQ-aK-veQ">
                                 <rect key="frame" x="0.0" y="426" width="375" height="120.5"/>
@@ -93,6 +96,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="631" y="27"/>
+        </scene>
+        <!--WEEK3ViewController-->
+        <scene sceneID="xvX-Cj-ABB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WEEK3" referencedIdentifier="WEEK3ViewController" id="LqP-Uc-m23" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PO7-93-awF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="26"/>
         </scene>
     </scenes>
 </document>
