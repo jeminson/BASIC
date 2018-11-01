@@ -21,6 +21,9 @@
 		A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207758A218AB53F00D97B5F /* TimerViewController.swift */; };
 		A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207758E218AB70C00D97B5F /* ContactListViewController.swift */; };
 		A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2077590218AB71600D97B5F /* ContactList.storyboard */; };
+		A2077593218AB9AB00D97B5F /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2077592218AB9AB00D97B5F /* ContactInfoViewController.swift */; };
+		A2077596218AC0EB00D97B5F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2077595218AC0EB00D97B5F /* Settings.storyboard */; };
+		A2077598218AC0F800D97B5F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2077597218AC0F800D97B5F /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		A207758A218AB53F00D97B5F /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		A207758E218AB70C00D97B5F /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		A2077590218AB71600D97B5F /* ContactList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactList.storyboard; sourceTree = "<group>"; };
+		A2077592218AB9AB00D97B5F /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		A2077595218AC0EB00D97B5F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		A2077597218AC0F800D97B5F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			children = (
 				A207757E218AA2F800D97B5F /* WEEK3.storyboard */,
 				A207757C218AA2B500D97B5F /* WEEK3ViewController.swift */,
+				A2077594218AC0DF00D97B5F /* Settings */,
 				A207758C218AB6EE00D97B5F /* Contact List */,
 				A2077587218AB51A00D97B5F /* Timer */,
 				A2077582218AAEE400D97B5F /* Fizzbuzz */,
@@ -119,8 +126,18 @@
 			children = (
 				A2077590218AB71600D97B5F /* ContactList.storyboard */,
 				A207758E218AB70C00D97B5F /* ContactListViewController.swift */,
+				A2077592218AB9AB00D97B5F /* ContactInfoViewController.swift */,
 			);
 			path = "Contact List";
+			sourceTree = "<group>";
+		};
+		A2077594218AC0DF00D97B5F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A2077595218AC0EB00D97B5F /* Settings.storyboard */,
+				A2077597218AC0F800D97B5F /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +201,7 @@
 				A2077570218AA00B00D97B5F /* LaunchScreen.storyboard in Resources */,
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
+				A2077596218AC0EB00D97B5F /* Settings.storyboard in Resources */,
 				A207757F218AA2F800D97B5F /* WEEK3.storyboard in Resources */,
 				A2077589218AB53300D97B5F /* Timer.storyboard in Resources */,
 				A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */,
@@ -199,12 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A207757A218AA22E00D97B5F /* RoundButton.swift in Sources */,
+				A2077593218AB9AB00D97B5F /* ContactInfoViewController.swift in Sources */,
 				A2077584218AAEFF00D97B5F /* FizzbuzzViewController.swift in Sources */,
 				A2077568218AA00900D97B5F /* MainViewController.swift in Sources */,
 				A207757D218AA2B500D97B5F /* WEEK3ViewController.swift in Sources */,
 				A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */,
 				A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */,
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
+				A2077598218AC0F800D97B5F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

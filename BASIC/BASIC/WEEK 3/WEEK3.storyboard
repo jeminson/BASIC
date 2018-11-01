@@ -117,5 +117,13 @@
             </objects>
             <point key="canvasLocation" x="780" y="286"/>
         </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="8kd-mK-ZIX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsViewController" storyboardName="Settings" referencedIdentifier="SettingsViewController" id="wT8-Ir-DBY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0II-N6-7OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="335"/>
+        </scene>
     </scenes>
 </document>
