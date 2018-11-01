@@ -12,6 +12,7 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     var week3Array : [String] = ["FizzBuzz", "Timer", "Contact List"]
+
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,14 +33,19 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let cancelAction = UIAlertAction(title: "CANCEL", style: .default)
         let okAction = UIAlertAction(title: "GO", style: .default) { action in
-            switch indexPath.row {
-            case 0:
+            switch title {
+            case "FizzBuzz":
                 if let controller = self.storyboard?.instantiateViewController(withIdentifier: "FizzbuzzViewController") as? FizzbuzzViewController {
      
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
-            case 1:
+            case "Timer":
                 if let controller = self.storyboard?.instantiateViewController(withIdentifier: "TimerViewController") as? TimerViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+            case "Contact List":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "ContactListViewController") as? ContactListViewController {
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
@@ -54,6 +60,7 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        week3Array.sort()
         let cell = tableView.dequeueReusableCell(withIdentifier: "FirstCell")
         
         cell?.textLabel?.text = week3Array[indexPath.row]

@@ -19,6 +19,8 @@
 		A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2077585218AB0F700D97B5F /* Fizzbuzz.storyboard */; };
 		A2077589218AB53300D97B5F /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2077588218AB53300D97B5F /* Timer.storyboard */; };
 		A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207758A218AB53F00D97B5F /* TimerViewController.swift */; };
+		A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207758E218AB70C00D97B5F /* ContactListViewController.swift */; };
+		A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2077590218AB71600D97B5F /* ContactList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A2077585218AB0F700D97B5F /* Fizzbuzz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fizzbuzz.storyboard; sourceTree = "<group>"; };
 		A2077588218AB53300D97B5F /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
 		A207758A218AB53F00D97B5F /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		A207758E218AB70C00D97B5F /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		A2077590218AB71600D97B5F /* ContactList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			children = (
 				A207757E218AA2F800D97B5F /* WEEK3.storyboard */,
 				A207757C218AA2B500D97B5F /* WEEK3ViewController.swift */,
+				A207758C218AB6EE00D97B5F /* Contact List */,
 				A2077587218AB51A00D97B5F /* Timer */,
 				A2077582218AAEE400D97B5F /* Fizzbuzz */,
 			);
@@ -107,6 +112,15 @@
 				A207758A218AB53F00D97B5F /* TimerViewController.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		A207758C218AB6EE00D97B5F /* Contact List */ = {
+			isa = PBXGroup;
+			children = (
+				A2077590218AB71600D97B5F /* ContactList.storyboard */,
+				A207758E218AB70C00D97B5F /* ContactListViewController.swift */,
+			);
+			path = "Contact List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
 				A207757F218AA2F800D97B5F /* WEEK3.storyboard in Resources */,
 				A2077589218AB53300D97B5F /* Timer.storyboard in Resources */,
+				A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */,
 				A207756B218AA00900D97B5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +203,7 @@
 				A2077568218AA00900D97B5F /* MainViewController.swift in Sources */,
 				A207757D218AA2B500D97B5F /* WEEK3ViewController.swift in Sources */,
 				A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */,
+				A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */,
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

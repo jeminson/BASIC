@@ -109,5 +109,13 @@
             </objects>
             <point key="canvasLocation" x="770" y="234"/>
         </scene>
+        <!--ContactListViewController-->
+        <scene sceneID="QTa-bS-bUf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ContactListViewController" storyboardName="ContactList" referencedIdentifier="ContactListViewController" id="oRC-ft-C6K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lM-NJ-RtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="286"/>
+        </scene>
     </scenes>
 </document>
