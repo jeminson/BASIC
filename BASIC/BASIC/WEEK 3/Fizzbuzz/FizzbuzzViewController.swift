@@ -17,22 +17,34 @@ class FizzbuzzViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FizzbuzzCell")
         
+        cell?.textLabel?.text = checkFizzbuzz(num: indexPath.row+1)
         
-        if (indexPath.row+1) % 15 == 0 {
-            cell?.textLabel?.text = "fizzbuzz"
+        if checkFizzbuzz(num: indexPath.row+1) == "fizzbuzz" {
             cell?.backgroundColor = UIColor.red
-        } else if (indexPath.row+1) % 5 == 0 {
-            cell?.textLabel?.text = "buzz"
+        } else if checkFizzbuzz(num: indexPath.row+1) == "buzz" {
             cell?.backgroundColor = UIColor.lightGray
-        } else if (indexPath.row+1) % 3 == 0 {
-            cell?.textLabel?.text = "fizz"
+        } else if checkFizzbuzz(num: indexPath.row+1) == "fizz" {
             cell?.backgroundColor = UIColor.gray
         } else {
-            cell?.textLabel?.text = String(indexPath.row+1)
             cell?.backgroundColor = UIColor.white
         }
-        
+
         return cell!
+    }
+    
+    func checkFizzbuzz(num : Int) -> String {
+        var text : String = ""
+        
+        if num % 5 == 0 && num % 3 == 0 {
+            text = "fizzbuzz"
+        } else if num % 5 == 0 {
+            text = "buzz"
+        } else if num % 3 == 0 {
+            text = "fizz"
+        } else {
+            text = String(num)
+        }
+        return text
     }
     
 
@@ -43,6 +55,5 @@ class FizzbuzzViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
 
-   
 
 }

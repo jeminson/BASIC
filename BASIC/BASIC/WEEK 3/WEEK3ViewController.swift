@@ -11,7 +11,7 @@ import UIKit
 class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    var week3Array : [String] = ["FizzBuzz", "Timer", "Contact List", "Settings"]
+    var week3Array : [String] = ["FizzBuzz", "Timer", "Contact List", "Settings", "Date"]
 
     
     
@@ -54,6 +54,11 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
+            case "Date":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "DateViewController") as? DateViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             default: break
                 
             }
@@ -81,6 +86,6 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
-
+    
 
 }
