@@ -15,8 +15,7 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var contactListTableView: UITableView!
     
     var contactInfoArray: Array<ContactInfo> = []
-    
-    
+
     
     func saveContactInfo(object: ContactInfo, editContactInfo: Bool) {
         if editContactInfo {
@@ -65,6 +64,8 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
         title = "Contact List"
        
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(buttonAction))
+        
+        
     }
     
     @objc func buttonAction(_ sender: UIBarButtonItem) {

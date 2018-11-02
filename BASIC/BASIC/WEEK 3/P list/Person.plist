@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>New item</key>
+		<string>Je Min</string>
+		<key>New item - 2</key>
+		<string>Son</string>
+		<key>New item - 3</key>
+		<string>28</string>
+		<key>New item - 4</key>
+		<string>97205</string>
+		<key>New item - 5</key>
+		<string>541-000-0000</string>
+	</dict>
+	<dict>
+		<key>New item</key>
+		<string>Ye Ji</string>
+		<key>New item - 2</key>
+		<string>Kim</string>
+		<key>New item - 3</key>
+		<string>28</string>
+		<key>New item - 4</key>
+		<string>97205</string>
+		<key>New item - 5</key>
+		<string>541-000-1111</string>
+	</dict>
+	<dict>
+		<key>New item</key>
+		<string>Yoonku</string>
+		<key>New item - 2</key>
+		<string>Lee</string>
+		<key>New item - 3</key>
+		<string>28</string>
+		<key>New item - 4</key>
+		<string>97401</string>
+		<key>New item - 5</key>
+		<string>503-444-3333</string>
+	</dict>
+	<dict>
+		<key>New item</key>
+		<string>David</string>
+		<key>New item - 2</key>
+		<string>Jo</string>
+		<key>New item - 3</key>
+		<string>30</string>
+		<key>New item - 4</key>
+		<string>43321</string>
+		<key>New item - 5</key>
+		<string>444-111-2313</string>
+	</dict>
+	<dict>
+		<key>New item</key>
+		<string>James</string>
+		<key>New item - 2</key>
+		<string>Yu</string>
+		<key>New item - 3</key>
+		<string>33</string>
+		<key>New item - 4</key>
+		<string>12345</string>
+		<key>New item - 5</key>
+		<string>403-777-4343</string>
+	</dict>
+</array>
+</plist>

@@ -29,6 +29,11 @@
 		A20775A2218B62FE00D97B5F /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775A1218B62FE00D97B5F /* ContactInfo.swift */; };
 		A20775A6218B64C200D97B5F /* ContactInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775A5218B64C200D97B5F /* ContactInfoTableViewCell.swift */; };
 		A20775A8218B770B00D97B5F /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775A7218B770B00D97B5F /* ContactListTableViewCell.swift */; };
+		A20775AD218B916800D97B5F /* Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20775AC218B916800D97B5F /* Person.plist */; };
+		A20775AF218B94EB00D97B5F /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775AE218B94EB00D97B5F /* PlistViewController.swift */; };
+		A20775B1218B953600D97B5F /* Plist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20775B0218B953600D97B5F /* Plist.storyboard */; };
+		A20775B3218B98C700D97B5F /* PlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775B2218B98C700D97B5F /* PlistTableViewCell.swift */; };
+		A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775B4218B998500D97B5F /* PersonInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		A20775A1218B62FE00D97B5F /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
 		A20775A5218B64C200D97B5F /* ContactInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoTableViewCell.swift; sourceTree = "<group>"; };
 		A20775A7218B770B00D97B5F /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		A20775AC218B916800D97B5F /* Person.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Person.plist; sourceTree = "<group>"; };
+		A20775AE218B94EB00D97B5F /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		A20775B0218B953600D97B5F /* Plist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plist.storyboard; sourceTree = "<group>"; };
+		A20775B2218B98C700D97B5F /* PlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTableViewCell.swift; sourceTree = "<group>"; };
+		A20775B4218B998500D97B5F /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				A2077565218AA00900D97B5F /* AppDelegate.swift */,
+				A2077579218AA22E00D97B5F /* RoundButton.swift */,
 				A207756E218AA00B00D97B5F /* LaunchScreen.storyboard */,
 				A2077569218AA00900D97B5F /* Main.storyboard */,
 				A2077567218AA00900D97B5F /* MainViewController.swift */,
 				A207757B218AA28A00D97B5F /* WEEK 3 */,
 				A207756C218AA00B00D97B5F /* Assets.xcassets */,
 				A2077571218AA00B00D97B5F /* Info.plist */,
-				A2077579218AA22E00D97B5F /* RoundButton.swift */,
 			);
 			path = BASIC;
 			sourceTree = "<group>";
@@ -105,6 +115,7 @@
 			children = (
 				A207757E218AA2F800D97B5F /* WEEK3.storyboard */,
 				A207757C218AA2B500D97B5F /* WEEK3ViewController.swift */,
+				A20775A9218B8DA600D97B5F /* P list */,
 				A207759C218B521F00D97B5F /* Date */,
 				A2077594218AC0DF00D97B5F /* Settings */,
 				A207758C218AB6EE00D97B5F /* Contact List */,
@@ -161,6 +172,18 @@
 				A207759F218B523C00D97B5F /* DateViewController.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		A20775A9218B8DA600D97B5F /* P list */ = {
+			isa = PBXGroup;
+			children = (
+				A20775AC218B916800D97B5F /* Person.plist */,
+				A20775B0218B953600D97B5F /* Plist.storyboard */,
+				A20775AE218B94EB00D97B5F /* PlistViewController.swift */,
+				A20775B2218B98C700D97B5F /* PlistTableViewCell.swift */,
+				A20775B4218B998500D97B5F /* PersonInfo.swift */,
+			);
+			path = "P list";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +247,9 @@
 				A2077570218AA00B00D97B5F /* LaunchScreen.storyboard in Resources */,
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
+				A20775B1218B953600D97B5F /* Plist.storyboard in Resources */,
 				A2077596218AC0EB00D97B5F /* Settings.storyboard in Resources */,
+				A20775AD218B916800D97B5F /* Person.plist in Resources */,
 				A207757F218AA2F800D97B5F /* WEEK3.storyboard in Resources */,
 				A2077589218AB53300D97B5F /* Timer.storyboard in Resources */,
 				A207759E218B522D00D97B5F /* Date.storyboard in Resources */,
@@ -249,9 +274,12 @@
 				A207757D218AA2B500D97B5F /* WEEK3ViewController.swift in Sources */,
 				A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */,
 				A20775A6218B64C200D97B5F /* ContactInfoTableViewCell.swift in Sources */,
+				A20775B3218B98C700D97B5F /* PlistTableViewCell.swift in Sources */,
+				A20775AF218B94EB00D97B5F /* PlistViewController.swift in Sources */,
 				A20775A8218B770B00D97B5F /* ContactListTableViewCell.swift in Sources */,
 				A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */,
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
+				A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */,
 				A2077598218AC0F800D97B5F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
