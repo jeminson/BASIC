@@ -6,7 +6,9 @@
 //  Copyright © 2018년 Je Min Son. All rights reserved.
 //
 
-/* Still bug with this code */
+/* Still bug with this code
+https://medium.com/ios-os-x-development/build-an-stopwatch-with-swift-3-0-c7040818a10f
+ */
 
 import UIKit
 
