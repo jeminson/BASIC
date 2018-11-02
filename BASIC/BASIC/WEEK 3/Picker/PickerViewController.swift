@@ -11,10 +11,13 @@ import UIKit
 class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var countryLabel: UILabel!
-   
+    @IBOutlet weak var dateLabel: UILabel!
+    
     var countryArray = ["South Korea", "North Korea", "America", "Japan", "China", "Canada"]
     
     @IBOutlet weak var countryPickerView: UIPickerView!
+    @IBOutlet weak var myDatePicker: UIDatePicker!
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -33,6 +36,21 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         countryLabel.text = "selected: \(countryArray[row])"
     }
 
+    
+    @IBAction func dateActionButton(_ sender: UIButton) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        
+        let dateString = dateFormatter.string(from: myDatePicker.date)
+        self.dateLabel.text = dateString
+    }
+    
+    
+
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

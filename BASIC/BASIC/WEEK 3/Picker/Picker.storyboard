@@ -19,33 +19,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9o-Oe-wAH">
-                                <rect key="frame" x="16" y="79" width="343" height="21"/>
+                                <rect key="frame" x="16" y="49" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvH-IP-WTI">
-                                <rect key="frame" x="0.0" y="157" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="78" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="3P8-6Z-wOp" id="Yg3-yv-OpE"/>
                                     <outlet property="delegate" destination="3P8-6Z-wOp" id="rCk-dh-x06"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dQ-rl-3gW">
+                                <rect key="frame" x="16" y="329" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-Ef-Lou">
+                                <rect key="frame" x="164" y="582" width="46" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="dateActionButton:" destination="3P8-6Z-wOp" eventType="touchUpInside" id="AUe-Vw-BKK"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3pt-Tj-U6F">
+                                <rect key="frame" x="0.0" y="358" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="562829486.06412303">
+                                    <!--2018-11-02 05:31:26 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pvH-IP-WTI" firstAttribute="trailing" secondItem="WU7-sW-fU2" secondAttribute="trailing" id="GZf-ok-WcU"/>
-                            <constraint firstItem="pvH-IP-WTI" firstAttribute="top" secondItem="Y9o-Oe-wAH" secondAttribute="bottom" constant="57" id="Oxr-IL-l4w"/>
-                            <constraint firstItem="Y9o-Oe-wAH" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" constant="16" id="Vie-Cl-pd0"/>
-                            <constraint firstItem="Y9o-Oe-wAH" firstAttribute="top" secondItem="WU7-sW-fU2" secondAttribute="top" constant="59" id="fEH-gz-8la"/>
-                            <constraint firstItem="WU7-sW-fU2" firstAttribute="trailing" secondItem="Y9o-Oe-wAH" secondAttribute="trailing" constant="16" id="nvG-95-vV1"/>
-                            <constraint firstItem="pvH-IP-WTI" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" id="owX-XE-25K"/>
+                            <constraint firstItem="Y9o-Oe-wAH" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" constant="16" id="05t-Kr-g8w"/>
+                            <constraint firstItem="3pt-Tj-U6F" firstAttribute="trailing" secondItem="WU7-sW-fU2" secondAttribute="trailing" id="7Pb-NL-nvP"/>
+                            <constraint firstItem="WU7-sW-fU2" firstAttribute="trailing" secondItem="Y9o-Oe-wAH" secondAttribute="trailing" constant="16" id="AOB-tF-PBI"/>
+                            <constraint firstItem="Y9o-Oe-wAH" firstAttribute="top" secondItem="WU7-sW-fU2" secondAttribute="top" constant="29" id="FTV-L5-oSe"/>
+                            <constraint firstItem="pvH-IP-WTI" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" id="IS3-PA-iwL"/>
+                            <constraint firstItem="kK3-Ef-Lou" firstAttribute="top" secondItem="3pt-Tj-U6F" secondAttribute="bottom" constant="8" id="VsX-JK-y7M"/>
+                            <constraint firstItem="pvH-IP-WTI" firstAttribute="trailing" secondItem="WU7-sW-fU2" secondAttribute="trailing" id="eMG-aQ-S0q"/>
+                            <constraint firstItem="3pt-Tj-U6F" firstAttribute="top" secondItem="5dQ-rl-3gW" secondAttribute="bottom" constant="8" id="fHF-nU-E8r"/>
+                            <constraint firstItem="kK3-Ef-Lou" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" constant="164" id="gN5-vg-1qq"/>
+                            <constraint firstItem="pvH-IP-WTI" firstAttribute="top" secondItem="Y9o-Oe-wAH" secondAttribute="bottom" constant="8" id="jCc-wl-tNJ"/>
+                            <constraint firstItem="3pt-Tj-U6F" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" id="oFt-Pv-AlZ"/>
+                            <constraint firstItem="WU7-sW-fU2" firstAttribute="trailing" secondItem="5dQ-rl-3gW" secondAttribute="trailing" constant="16" id="qfp-r1-nfF"/>
+                            <constraint firstItem="5dQ-rl-3gW" firstAttribute="leading" secondItem="WU7-sW-fU2" secondAttribute="leading" constant="16" id="sR6-2g-Z0n"/>
+                            <constraint firstItem="5dQ-rl-3gW" firstAttribute="top" secondItem="pvH-IP-WTI" secondAttribute="bottom" constant="35" id="tqN-1Z-Wc1"/>
+                            <constraint firstItem="WU7-sW-fU2" firstAttribute="trailing" secondItem="kK3-Ef-Lou" secondAttribute="trailing" constant="165" id="w26-Pd-pZ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WU7-sW-fU2"/>
                     </view>
                     <connections>
                         <outlet property="countryLabel" destination="Y9o-Oe-wAH" id="Ov1-za-N4E"/>
                         <outlet property="countryPickerView" destination="pvH-IP-WTI" id="cNe-7v-F1j"/>
+                        <outlet property="dateLabel" destination="5dQ-rl-3gW" id="Yy5-8K-9jm"/>
+                        <outlet property="myDatePicker" destination="3pt-Tj-U6F" id="Tu4-Yh-ErW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2oP-Gp-Sz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
