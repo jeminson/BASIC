@@ -8,6 +8,7 @@
 
 import UIKit
 
+// What is optional and required for protocol?
 protocol DetailInfo {
     func saveContactInfo(object: ContactInfo, editContactInfo: Bool)
 }

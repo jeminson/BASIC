@@ -59,7 +59,7 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
-            case "P List":
+            case "P list":
                 if let controller = self.storyboard?.instantiateViewController(withIdentifier: "PlistViewController") as? PlistViewController {
                     
                     self.navigationController?.pushViewController(controller, animated: true)

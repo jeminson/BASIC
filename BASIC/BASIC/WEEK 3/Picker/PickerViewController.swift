@@ -45,11 +45,7 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.dateLabel.text = dateString
     }
     
-    
 
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
