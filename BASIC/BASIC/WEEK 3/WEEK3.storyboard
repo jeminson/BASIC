@@ -128,5 +128,13 @@
             </objects>
             <point key="canvasLocation" x="535" y="321"/>
         </scene>
+        <!--SearchBarTableViewController-->
+        <scene sceneID="fLN-1I-wBE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchBarTableViewController" storyboardName="SearchBar" referencedIdentifier="SearchBarTableViewController" id="g5s-sN-Jl7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFn-lB-Kv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="377"/>
+        </scene>
     </scenes>
 </document>

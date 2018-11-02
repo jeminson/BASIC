@@ -42,6 +42,8 @@
 		A279C7E9218CC223005C8362 /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7E8218CC223005C8362 /* PersonInfoTableViewCell.swift */; };
 		A279C7EB218CC451005C8362 /* PersonInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7EA218CC451005C8362 /* PersonInformation.swift */; };
 		A279C7ED218CC6FF005C8362 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7EC218CC6FF005C8362 /* PersonTableViewCell.swift */; };
+		A279C7F0218CF474005C8362 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C7EF218CF474005C8362 /* SearchBar.storyboard */; };
+		A279C7F2218CF493005C8362 /* SearchBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7F1218CF493005C8362 /* SearchBarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		A279C7E8218CC223005C8362 /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
 		A279C7EA218CC451005C8362 /* PersonInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInformation.swift; sourceTree = "<group>"; };
 		A279C7EC218CC6FF005C8362 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		A279C7EF218CF474005C8362 /* SearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
+		A279C7F1218CF493005C8362 /* SearchBarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				A20775A9218B8DA600D97B5F /* P list */,
 				A207759C218B521F00D97B5F /* Date */,
 				A2077594218AC0DF00D97B5F /* Settings */,
+				A279C7EE218CF453005C8362 /* SearchBarController */,
 				A207758C218AB6EE00D97B5F /* Contact List */,
 				A279C7E1218CBF07005C8362 /* PersonTableViewController */,
 				A2077587218AB51A00D97B5F /* Timer */,
@@ -226,6 +231,15 @@
 			path = PersonTableViewController;
 			sourceTree = "<group>";
 		};
+		A279C7EE218CF453005C8362 /* SearchBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A279C7EF218CF474005C8362 /* SearchBar.storyboard */,
+				A279C7F1218CF493005C8362 /* SearchBarTableViewController.swift */,
+			);
+			path = SearchBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A279C7F0218CF474005C8362 /* SearchBar.storyboard in Resources */,
 				A2077570218AA00B00D97B5F /* LaunchScreen.storyboard in Resources */,
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
 				A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */,
@@ -309,6 +324,7 @@
 			files = (
 				A20775A0218B523C00D97B5F /* DateViewController.swift in Sources */,
 				A279C7EB218CC451005C8362 /* PersonInformation.swift in Sources */,
+				A279C7F2218CF493005C8362 /* SearchBarTableViewController.swift in Sources */,
 				A207757A218AA22E00D97B5F /* RoundButton.swift in Sources */,
 				A2077593218AB9AB00D97B5F /* ContactInfoViewController.swift in Sources */,
 				A279C7ED218CC6FF005C8362 /* PersonTableViewCell.swift in Sources */,
