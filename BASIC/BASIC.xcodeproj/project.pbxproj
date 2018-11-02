@@ -34,6 +34,8 @@
 		A20775B1218B953600D97B5F /* Plist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20775B0218B953600D97B5F /* Plist.storyboard */; };
 		A20775B3218B98C700D97B5F /* PlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775B2218B98C700D97B5F /* PlistTableViewCell.swift */; };
 		A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775B4218B998500D97B5F /* PersonInfo.swift */; };
+		A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C7DB218C1512005C8362 /* Picker.storyboard */; };
+		A279C7DE218C1521005C8362 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7DD218C1521005C8362 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		A20775B0218B953600D97B5F /* Plist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plist.storyboard; sourceTree = "<group>"; };
 		A20775B2218B98C700D97B5F /* PlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTableViewCell.swift; sourceTree = "<group>"; };
 		A20775B4218B998500D97B5F /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
+		A279C7DB218C1512005C8362 /* Picker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
+		A279C7DD218C1521005C8362 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			children = (
 				A207757E218AA2F800D97B5F /* WEEK3.storyboard */,
 				A207757C218AA2B500D97B5F /* WEEK3ViewController.swift */,
+				A279C7DA218C14F8005C8362 /* Picker */,
 				A20775A9218B8DA600D97B5F /* P list */,
 				A207759C218B521F00D97B5F /* Date */,
 				A2077594218AC0DF00D97B5F /* Settings */,
@@ -186,6 +191,15 @@
 			path = "P list";
 			sourceTree = "<group>";
 		};
+		A279C7DA218C14F8005C8362 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				A279C7DB218C1512005C8362 /* Picker.storyboard */,
+				A279C7DD218C1521005C8362 /* PickerViewController.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +260,7 @@
 			files = (
 				A2077570218AA00B00D97B5F /* LaunchScreen.storyboard in Resources */,
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
+				A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */,
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
 				A20775B1218B953600D97B5F /* Plist.storyboard in Resources */,
 				A2077596218AC0EB00D97B5F /* Settings.storyboard in Resources */,
@@ -281,6 +296,7 @@
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
 				A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */,
 				A2077598218AC0F800D97B5F /* SettingsViewController.swift in Sources */,
+				A279C7DE218C1521005C8362 /* PickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,17 +45,30 @@ class ContactListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let obj = contactInfoArray[indexPath.row]
+        let alertController = UIAlertController(title: "Edit", message: "", preferredStyle: .alert)
         
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "ContactInfoViewController") as? ContactInfoViewController {
-            
-            controller.contact = obj
-            controller.delegate = self
-            controller.isEdit = true
-            
-            
-            navigationController?.pushViewController(controller, animated: true)
+        let deleteAction = UIAlertAction(title: "Delete", style: .default) { action in
+            print("delete \(indexPath.row)")
         }
+        let editAction = UIAlertAction(title: "Edit", style: .default) { action in
+            let obj = self.contactInfoArray[indexPath.row]
+            
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "ContactInfoViewController") as? ContactInfoViewController {
+                
+                controller.contact = obj
+                controller.delegate = self
+                controller.isEdit = true
+
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        }
+        
+        alertController.addAction(deleteAction)
+        alertController.addAction(editAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+
     }
 
     override func viewDidLoad() {

@@ -11,7 +11,7 @@ import UIKit
 class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    var week3Array : [String] = ["FizzBuzz", "Timer", "Contact List", "Settings", "Date", "P List"]
+    var week3Array : [String] = ["FizzBuzz", "Timer", "Contact List", "Settings", "Date", "P list", "Picker"]
 
     
     
@@ -61,6 +61,11 @@ class WEEK3ViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }
             case "P List":
                 if let controller = self.storyboard?.instantiateViewController(withIdentifier: "PlistViewController") as? PlistViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+            case "Picker":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "PickerViewController") as? PickerViewController {
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
