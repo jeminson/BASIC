@@ -6,9 +6,7 @@
 //  Copyright © 2018년 Je Min Son. All rights reserved.
 //
 
-/* Still bug with this code
-https://medium.com/ios-os-x-development/build-an-stopwatch-with-swift-3-0-c7040818a10f
- */
+
 
 import UIKit
 
@@ -66,29 +64,35 @@ class TimerViewController: UIViewController {
         case 1:
             if isTimerRunning == false {
                 print("start")
+                print(isTimerRunning)
                 startTimer()
                 isTimerRunning = true
             }
         case 2:
-            if self.resumeTapped == false {
+            if resumeTapped == false {
                 timer.invalidate()
-                self.resumeTapped = true
+                resumeTapped = true
                 isTimerRunning = true
                 pauseRestButtonLabel.text = "Resume"
                 print("pause")
+                print(isTimerRunning)
             } else {
                 startTimer()
-                self.resumeTapped = false
+                resumeTapped = false
                 isTimerRunning = false
                 pauseRestButtonLabel.text = "Pause"
                 print("resume")
+                print(isTimerRunning)
             }
         case 3:
             timer.invalidate()
             seconds = 120
             timerLabel.text = timerFormatting(time: TimeInterval(seconds))
+            resumeTapped = false
+            pauseRestButtonLabel.text = "Pause"
             isTimerRunning = false
-            print("resume")
+            print("reset")
+            print(isTimerRunning)
         default:
             break
         }
