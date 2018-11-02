@@ -120,5 +120,13 @@
             </objects>
             <point key="canvasLocation" x="535" y="274"/>
         </scene>
+        <!--PersonTableViewController-->
+        <scene sceneID="D4U-ah-Ypw">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PersonTableViewController" storyboardName="PersonTableView" referencedIdentifier="PersonTableViewController" id="aY0-6s-enO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhC-is-seV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="321"/>
+        </scene>
     </scenes>
 </document>

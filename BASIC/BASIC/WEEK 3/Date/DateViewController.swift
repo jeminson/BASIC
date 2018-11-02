@@ -60,22 +60,18 @@ class DateViewController: UIViewController, UITextFieldDelegate {
         title = "Date"
         
         setUpDate()
-        
-        
     }
     
     @IBAction func doneActionButton(_ sender: UIBarButtonItem) {
         dateTextField.text = stringValue
         openDatePicker(bool : false)
         dateTextField.resignFirstResponder()
-
     }
     
     @IBAction func cancelActionButton(_ sender: UIBarButtonItem) {
         dateTextField.text = ""
         openDatePicker(bool : false)
         dateTextField.resignFirstResponder()
-
     }
     
     @IBAction func datePickerActionButton(_ sender: UIDatePicker) {

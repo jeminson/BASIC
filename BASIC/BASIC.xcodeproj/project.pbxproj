@@ -36,6 +36,12 @@
 		A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20775B4218B998500D97B5F /* PersonInfo.swift */; };
 		A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C7DB218C1512005C8362 /* Picker.storyboard */; };
 		A279C7DE218C1521005C8362 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7DD218C1521005C8362 /* PickerViewController.swift */; };
+		A279C7E3218CBF67005C8362 /* PersonTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C7E2218CBF67005C8362 /* PersonTableView.storyboard */; };
+		A279C7E5218CBF8A005C8362 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7E4218CBF8A005C8362 /* PersonTableViewController.swift */; };
+		A279C7E7218CC10D005C8362 /* PersonInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7E6218CC10D005C8362 /* PersonInfoTableViewController.swift */; };
+		A279C7E9218CC223005C8362 /* PersonInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7E8218CC223005C8362 /* PersonInfoTableViewCell.swift */; };
+		A279C7EB218CC451005C8362 /* PersonInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7EA218CC451005C8362 /* PersonInformation.swift */; };
+		A279C7ED218CC6FF005C8362 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7EC218CC6FF005C8362 /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,12 @@
 		A20775B4218B998500D97B5F /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		A279C7DB218C1512005C8362 /* Picker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
 		A279C7DD218C1521005C8362 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		A279C7E2218CBF67005C8362 /* PersonTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonTableView.storyboard; sourceTree = "<group>"; };
+		A279C7E4218CBF8A005C8362 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		A279C7E6218CC10D005C8362 /* PersonInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewController.swift; sourceTree = "<group>"; };
+		A279C7E8218CC223005C8362 /* PersonInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A279C7EA218CC451005C8362 /* PersonInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInformation.swift; sourceTree = "<group>"; };
+		A279C7EC218CC6FF005C8362 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,7 @@
 				A207759C218B521F00D97B5F /* Date */,
 				A2077594218AC0DF00D97B5F /* Settings */,
 				A207758C218AB6EE00D97B5F /* Contact List */,
+				A279C7E1218CBF07005C8362 /* PersonTableViewController */,
 				A2077587218AB51A00D97B5F /* Timer */,
 				A2077582218AAEE400D97B5F /* Fizzbuzz */,
 			);
@@ -200,6 +213,19 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		A279C7E1218CBF07005C8362 /* PersonTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A279C7E2218CBF67005C8362 /* PersonTableView.storyboard */,
+				A279C7E4218CBF8A005C8362 /* PersonTableViewController.swift */,
+				A279C7EC218CC6FF005C8362 /* PersonTableViewCell.swift */,
+				A279C7E6218CC10D005C8362 /* PersonInfoTableViewController.swift */,
+				A279C7E8218CC223005C8362 /* PersonInfoTableViewCell.swift */,
+				A279C7EA218CC451005C8362 /* PersonInformation.swift */,
+			);
+			path = PersonTableViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,6 +287,7 @@
 				A2077570218AA00B00D97B5F /* LaunchScreen.storyboard in Resources */,
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
 				A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */,
+				A279C7E3218CBF67005C8362 /* PersonTableView.storyboard in Resources */,
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
 				A20775B1218B953600D97B5F /* Plist.storyboard in Resources */,
 				A2077596218AC0EB00D97B5F /* Settings.storyboard in Resources */,
@@ -281,12 +308,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20775A0218B523C00D97B5F /* DateViewController.swift in Sources */,
+				A279C7EB218CC451005C8362 /* PersonInformation.swift in Sources */,
 				A207757A218AA22E00D97B5F /* RoundButton.swift in Sources */,
 				A2077593218AB9AB00D97B5F /* ContactInfoViewController.swift in Sources */,
+				A279C7ED218CC6FF005C8362 /* PersonTableViewCell.swift in Sources */,
 				A2077584218AAEFF00D97B5F /* FizzbuzzViewController.swift in Sources */,
 				A20775A2218B62FE00D97B5F /* ContactInfo.swift in Sources */,
 				A2077568218AA00900D97B5F /* MainViewController.swift in Sources */,
+				A279C7E9218CC223005C8362 /* PersonInfoTableViewCell.swift in Sources */,
 				A207757D218AA2B500D97B5F /* WEEK3ViewController.swift in Sources */,
+				A279C7E7218CC10D005C8362 /* PersonInfoTableViewController.swift in Sources */,
 				A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */,
 				A20775A6218B64C200D97B5F /* ContactInfoTableViewCell.swift in Sources */,
 				A20775B3218B98C700D97B5F /* PlistTableViewCell.swift in Sources */,
@@ -294,6 +325,7 @@
 				A20775A8218B770B00D97B5F /* ContactListTableViewCell.swift in Sources */,
 				A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */,
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
+				A279C7E5218CBF8A005C8362 /* PersonTableViewController.swift in Sources */,
 				A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */,
 				A2077598218AC0F800D97B5F /* SettingsViewController.swift in Sources */,
 				A279C7DE218C1521005C8362 /* PickerViewController.swift in Sources */,
