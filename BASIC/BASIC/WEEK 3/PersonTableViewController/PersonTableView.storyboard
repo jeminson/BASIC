@@ -17,17 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Name" showsCancelButton="YES" id="udn-gD-99b">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Name" showsCancelButton="YES" showsScopeBar="YES" id="udn-gD-99b">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Name</string>
+                                <string>Age</string>
+                                <string>Phone Number</string>
+                            </scopeButtonTitles>
                             <connections>
                                 <outlet property="delegate" destination="vDV-Fw-efz" id="not-j0-YNR"/>
                             </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonTableViewCell" rowHeight="150" id="Jfj-uM-Koj" customClass="PersonTableViewCell" customModule="BASIC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.5" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="111.5" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jfj-uM-Koj" id="u0d-C1-be9">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>

@@ -45,6 +45,22 @@ class PersonTableViewController: UITableViewController, UISearchBarDelegate, Det
     }
     
     
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
+        case 0:
+            personInfoArray = personInfoOriginalArray.sorted(by: {$0.name! < $1.name!})
+        case 1:
+            personInfoArray = personInfoOriginalArray.sorted(by: {$0.age! < $1.age!})
+        case 2:
+            personInfoArray = personInfoOriginalArray.sorted(by: {$0.phoneNumber! < $1.phoneNumber!})
+        default:
+            break
+        }
+        
+        
+        tableView.reloadData()
+    }
+    
     
     func savePersonInfo(object: PersonInformation, editPersonInfo: Bool) {
         
