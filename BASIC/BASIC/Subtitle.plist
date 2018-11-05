@@ -39,6 +39,15 @@
 		<key>7</key>
 		<string>Timer example</string>
 	</dict>
-	<dict/>
+	<dict>
+		<key>0</key>
+		<string>CornerRadius &amp; Border Examples</string>
+		<key>1</key>
+		<string>Extensions Examples </string>
+		<key>2</key>
+		<string></string>
+		<key>3</key>
+		<string></string>
+	</dict>
 </array>
 </plist>

@@ -43,7 +43,13 @@
 		<string>Timer</string>
 	</dict>
 	<dict>
-		<key>New item</key>
+		<key>0</key>
+		<string>CornerRadius</string>
+		<key>1</key>
+		<string>Extensions</string>
+		<key>2</key>
+		<string></string>
+		<key>3</key>
 		<string></string>
 	</dict>
 </array>

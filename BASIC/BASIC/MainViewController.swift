@@ -112,6 +112,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
+            case "Extensions":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "ExtensionsViewController") as? ExtensionsViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+            case "CornerRadius":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "CornerRadiusViewController") as? CornerRadiusViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             default:
                 break
             }
