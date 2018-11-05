@@ -107,6 +107,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
+            case "Timer":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "TimerViewController") as? TimerViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             default:
                 break
             }
