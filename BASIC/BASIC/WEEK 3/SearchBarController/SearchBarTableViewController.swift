@@ -14,7 +14,7 @@ class SearchBarTableViewController: UITableViewController, UISearchResultsUpdati
     @IBOutlet weak var nameSearchBar: UISearchBar!
     @IBOutlet var nameTableView: UITableView!
     
-    let searchController = UISearchController(searchResultsController: nil)
+    let nameSearchController = UISearchController(searchResultsController: nil)
     
     var unfilteredArray : [String] = ["JeMin", "Yeji", "Yoonku", "David"]
     var filteredArray : [String]?
@@ -23,10 +23,10 @@ class SearchBarTableViewController: UITableViewController, UISearchResultsUpdati
         super.viewDidLoad()
         
         filteredArray = unfilteredArray
-        searchController.searchResultsUpdater = self
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
-        tableView.tableHeaderView = searchController.searchBar
+        nameSearchController.searchResultsUpdater = self
+        nameSearchController.hidesNavigationBarDuringPresentation = false
+        nameSearchController.dimsBackgroundDuringPresentation = false
+        tableView.tableHeaderView = nameSearchController.searchBar
         
     }
     
@@ -51,10 +51,10 @@ class SearchBarTableViewController: UITableViewController, UISearchResultsUpdati
     }
     
     
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text, !searchText.isEmpty {
+    func updateSearchResults(for nameSearchController: UISearchController) {
+        if let nameSearchText = nameSearchController.searchBar.text, !nameSearchText.isEmpty {
             filteredArray = unfilteredArray.filter { arr in
-                return arr.lowercased().contains(searchText.lowercased())
+                return arr.lowercased().contains(nameSearchText.lowercased())
             }
             
         } else {
