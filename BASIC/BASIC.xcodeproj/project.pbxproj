@@ -42,6 +42,7 @@
 		A279C7F2218CF493005C8362 /* SearchBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7F1218CF493005C8362 /* SearchBarTableViewController.swift */; };
 		A279C7F4218FAB7C005C8362 /* Topic.plist in Resources */ = {isa = PBXBuildFile; fileRef = A279C7F3218FAB7C005C8362 /* Topic.plist */; };
 		A279C7F6218FAC2A005C8362 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C7F5218FAC2A005C8362 /* MainTableViewCell.swift */; };
+		A279C803218FFBB6005C8362 /* Subtitle.plist in Resources */ = {isa = PBXBuildFile; fileRef = A279C802218FFBB6005C8362 /* Subtitle.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		A279C7F1218CF493005C8362 /* SearchBarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewController.swift; sourceTree = "<group>"; };
 		A279C7F3218FAB7C005C8362 /* Topic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Topic.plist; sourceTree = "<group>"; };
 		A279C7F5218FAC2A005C8362 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A279C802218FFBB6005C8362 /* Subtitle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Subtitle.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,8 @@
 				A2077567218AA00900D97B5F /* MainViewController.swift */,
 				A279C7F5218FAC2A005C8362 /* MainTableViewCell.swift */,
 				A279C7F3218FAB7C005C8362 /* Topic.plist */,
+				A279C802218FFBB6005C8362 /* Subtitle.plist */,
+				A279C7F9218FFABE005C8362 /* WEEK 1 */,
 				A207757B218AA28A00D97B5F /* WEEK 3 */,
 				A207756C218AA00B00D97B5F /* Assets.xcassets */,
 				A2077571218AA00B00D97B5F /* Info.plist */,
@@ -226,6 +230,13 @@
 			path = SearchBarController;
 			sourceTree = "<group>";
 		};
+		A279C7F9218FFABE005C8362 /* WEEK 1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "WEEK 1";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +307,7 @@
 				A2077589218AB53300D97B5F /* Timer.storyboard in Resources */,
 				A207759E218B522D00D97B5F /* Date.storyboard in Resources */,
 				A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */,
+				A279C803218FFBB6005C8362 /* Subtitle.plist in Resources */,
 				A207756B218AA00900D97B5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

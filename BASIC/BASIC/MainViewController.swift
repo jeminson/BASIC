@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var topicArray : [[String : String]] = [[:]]
+    var subTitleArray : [[String : String]] = [[:]]
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return topicArray.count
@@ -55,10 +56,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WeekOneTableViewCell") as! WeekOneTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell") as! MainTableViewCell
         
         cell.titleLabel.text = topicArray[indexPath.section][String(indexPath.row)]
-//        cell.subTitleLabel.text = "Hello"
+        cell.subTitleLabel.text = subTitleArray[indexPath.section][String(indexPath.row)]
         
         return cell
     }
@@ -106,11 +107,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
-            case "Timer":
-                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "TimerViewController") as? TimerViewController {
-                    
-                    self.navigationController?.pushViewController(controller, animated: true)
-                }
             default:
                 break
             }
@@ -140,6 +136,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             let array = NSArray(contentsOfFile: path)
             
             topicArray = array as! [[String : String]]
+        }
+        
+        if let path = Bundle.main.path(forResource: "Subtitle", ofType: "plist") {
+            let array = NSArray(contentsOfFile: path)
+            
+            subTitleArray = array as! [[String : String]]
         }
     }
 

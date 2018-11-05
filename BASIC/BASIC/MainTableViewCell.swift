@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekOneTableViewCell: UITableViewCell {
+class MainTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var titleLabel: UILabel!

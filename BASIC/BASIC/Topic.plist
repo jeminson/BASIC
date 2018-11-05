@@ -3,12 +3,26 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>New item</key>
-		<string></string>
+		<key>0</key>
+		<string>Calculator</string>
 	</dict>
 	<dict>
-		<key>New item</key>
-		<string></string>
+		<key>0</key>
+		<string>Alert</string>
+		<key>1</key>
+		<string>AutoLayout</string>
+		<key>2</key>
+		<string>Battery</string>
+		<key>3</key>
+		<string>Camera Image</string>
+		<key>4</key>
+		<string>Image Animation</string>
+		<key>5</key>
+		<string>LR Animation</string>
+		<key>6</key>
+		<string>Sign-in</string>
+		<key>7</key>
+		<string>TableView</string>
 	</dict>
 	<dict>
 		<key>0</key>

@@ -47,7 +47,7 @@ class DateViewController: UIViewController, UITextFieldDelegate {
     
     func openDatePicker(bool : Bool) {
         UIView.animate(withDuration: 1.5) {
-            self.datePickerConstraintHeight.constant = self.datePickerConstraintHeight.constant == 500 ? 180 : 500
+            self.datePickerConstraintHeight.constant = self.datePickerConstraintHeight.constant == 500 ? 80 : 500
             self.view.layoutIfNeeded()
         }
     }

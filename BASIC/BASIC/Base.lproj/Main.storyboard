@@ -43,7 +43,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="WeekOneTableViewCell" textLabel="Mi3-5a-kOV" detailTextLabel="h4P-0l-LRD" style="IBUITableViewCellStyleSubtitle" id="SFy-Ye-YLW" customClass="WeekOneTableViewCell" customModule="BASIC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MainTableViewCell" textLabel="Mi3-5a-kOV" detailTextLabel="h4P-0l-LRD" style="IBUITableViewCellStyleSubtitle" id="SFy-Ye-YLW" customClass="MainTableViewCell" customModule="BASIC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFy-Ye-YLW" id="tuj-bg-hsi">
@@ -67,8 +67,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="subTitleLabel" destination="h4P-0l-LRD" id="J19-jC-Qhm"/>
-                                            <outlet property="titleLabel" destination="Mi3-5a-kOV" id="oUi-Es-Uv3"/>
+                                            <outlet property="subTitleLabel" destination="h4P-0l-LRD" id="tM7-Ge-aQS"/>
+                                            <outlet property="titleLabel" destination="Mi3-5a-kOV" id="YOe-zn-aG9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
