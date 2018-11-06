@@ -49,6 +49,15 @@
 		A279C80E219097ED005C8362 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C80D219097ED005C8362 /* Utility.swift */; };
 		A279C8112190A259005C8362 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C8102190A259005C8362 /* CornerRadiusViewController.swift */; };
 		A279C8132190A26B005C8362 /* CornerRadius.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C8122190A26B005C8362 /* CornerRadius.storyboard */; };
+		A279C8162190A8F2005C8362 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A279C8152190A8F2005C8362 /* Notification.storyboard */; };
+		A279C8182190A902005C8362 /* FirstNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C8172190A902005C8362 /* FirstNotificationViewController.swift */; };
+		A279C81A2190AC17005C8362 /* SecondNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C8192190AC17005C8362 /* SecondNotificationViewController.swift */; };
+		A279C81C2190B067005C8362 /* ThirdNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C81B2190B067005C8362 /* ThirdNotificationViewController.swift */; };
+		A279C81E2190B0E3005C8362 /* FourthNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C81D2190B0E3005C8362 /* FourthNotificationViewController.swift */; };
+		A29915CB2190DB1100F1908E /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29915CA2190DB1100F1908E /* Queue.storyboard */; };
+		A29915CD2190DB2300F1908E /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29915CC2190DB2300F1908E /* QueueViewController.swift */; };
+		A2ADAAD72191F1BD00B26D2B /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ADAAD62191F1BD00B26D2B /* Keyboard.storyboard */; };
+		A2ADAAD92191F1CD00B26D2B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ADAAD82191F1CD00B26D2B /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +105,15 @@
 		A279C80D219097ED005C8362 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		A279C8102190A259005C8362 /* CornerRadiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusViewController.swift; sourceTree = "<group>"; };
 		A279C8122190A26B005C8362 /* CornerRadius.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CornerRadius.storyboard; sourceTree = "<group>"; };
+		A279C8152190A8F2005C8362 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		A279C8172190A902005C8362 /* FirstNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNotificationViewController.swift; sourceTree = "<group>"; };
+		A279C8192190AC17005C8362 /* SecondNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNotificationViewController.swift; sourceTree = "<group>"; };
+		A279C81B2190B067005C8362 /* ThirdNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNotificationViewController.swift; sourceTree = "<group>"; };
+		A279C81D2190B0E3005C8362 /* FourthNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthNotificationViewController.swift; sourceTree = "<group>"; };
+		A29915CA2190DB1100F1908E /* Queue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
+		A29915CC2190DB2300F1908E /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		A2ADAAD62191F1BD00B26D2B /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		A2ADAAD82191F1CD00B26D2B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +154,6 @@
 				A279C7F5218FAC2A005C8362 /* MainTableViewCell.swift */,
 				A279C7F3218FAB7C005C8362 /* Topic.plist */,
 				A279C802218FFBB6005C8362 /* Subtitle.plist */,
-				A279C7F9218FFABE005C8362 /* WEEK 1 */,
 				A279C80421900166005C8362 /* WEEK 2 */,
 				A207757B218AA28A00D97B5F /* WEEK 3 */,
 				A279C80521900172005C8362 /* WEEK 4 */,
@@ -244,13 +261,6 @@
 			path = SearchBarController;
 			sourceTree = "<group>";
 		};
-		A279C7F9218FFABE005C8362 /* WEEK 1 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "WEEK 1";
-			sourceTree = "<group>";
-		};
 		A279C80421900166005C8362 /* WEEK 2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,8 +272,11 @@
 			isa = PBXGroup;
 			children = (
 				A279C80D219097ED005C8362 /* Utility.swift */,
+				A2ADAAD52191F19700B26D2B /* Keyboard */,
 				A279C80F2190A245005C8362 /* CornerRadius */,
 				A279C806219093E5005C8362 /* Extensions */,
+				A279C8142190A8C7005C8362 /* Notification */,
+				A29915C92190DAF600F1908E /* Queue */,
 			);
 			path = "WEEK 4";
 			sourceTree = "<group>";
@@ -285,6 +298,36 @@
 				A279C8102190A259005C8362 /* CornerRadiusViewController.swift */,
 			);
 			path = CornerRadius;
+			sourceTree = "<group>";
+		};
+		A279C8142190A8C7005C8362 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				A279C8152190A8F2005C8362 /* Notification.storyboard */,
+				A279C8172190A902005C8362 /* FirstNotificationViewController.swift */,
+				A279C8192190AC17005C8362 /* SecondNotificationViewController.swift */,
+				A279C81B2190B067005C8362 /* ThirdNotificationViewController.swift */,
+				A279C81D2190B0E3005C8362 /* FourthNotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		A29915C92190DAF600F1908E /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A29915CA2190DB1100F1908E /* Queue.storyboard */,
+				A29915CC2190DB2300F1908E /* QueueViewController.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		A2ADAAD52191F19700B26D2B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A2ADAAD62191F1BD00B26D2B /* Keyboard.storyboard */,
+				A2ADAAD82191F1CD00B26D2B /* KeyboardViewController.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,9 +400,12 @@
 				A20775AD218B916800D97B5F /* Person.plist in Resources */,
 				A2077589218AB53300D97B5F /* Timer.storyboard in Resources */,
 				A279C8132190A26B005C8362 /* CornerRadius.storyboard in Resources */,
+				A29915CB2190DB1100F1908E /* Queue.storyboard in Resources */,
 				A207759E218B522D00D97B5F /* Date.storyboard in Resources */,
 				A2077591218AB71600D97B5F /* ContactList.storyboard in Resources */,
 				A279C803218FFBB6005C8362 /* Subtitle.plist in Resources */,
+				A279C8162190A8F2005C8362 /* Notification.storyboard in Resources */,
+				A2ADAAD72191F1BD00B26D2B /* Keyboard.storyboard in Resources */,
 				A207756B218AA00900D97B5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,11 +422,14 @@
 				A279C7F2218CF493005C8362 /* SearchBarTableViewController.swift in Sources */,
 				A207757A218AA22E00D97B5F /* RoundButton.swift in Sources */,
 				A279C80E219097ED005C8362 /* Utility.swift in Sources */,
+				A279C81E2190B0E3005C8362 /* FourthNotificationViewController.swift in Sources */,
 				A2077593218AB9AB00D97B5F /* ContactInfoViewController.swift in Sources */,
+				A2ADAAD92191F1CD00B26D2B /* KeyboardViewController.swift in Sources */,
 				A279C7ED218CC6FF005C8362 /* PersonTableViewCell.swift in Sources */,
 				A2077584218AAEFF00D97B5F /* FizzbuzzViewController.swift in Sources */,
 				A20775A2218B62FE00D97B5F /* ContactInfo.swift in Sources */,
 				A279C8112190A259005C8362 /* CornerRadiusViewController.swift in Sources */,
+				A279C81C2190B067005C8362 /* ThirdNotificationViewController.swift in Sources */,
 				A2077568218AA00900D97B5F /* MainViewController.swift in Sources */,
 				A279C7E9218CC223005C8362 /* PersonInfoTableViewCell.swift in Sources */,
 				A279C7F6218FAC2A005C8362 /* MainTableViewCell.swift in Sources */,
@@ -394,6 +443,9 @@
 				A207758F218AB70C00D97B5F /* ContactListViewController.swift in Sources */,
 				A2077566218AA00900D97B5F /* AppDelegate.swift in Sources */,
 				A279C7E5218CBF8A005C8362 /* PersonTableViewController.swift in Sources */,
+				A279C81A2190AC17005C8362 /* SecondNotificationViewController.swift in Sources */,
+				A279C8182190A902005C8362 /* FirstNotificationViewController.swift in Sources */,
+				A29915CD2190DB2300F1908E /* QueueViewController.swift in Sources */,
 				A20775B5218B998500D97B5F /* PersonInfo.swift in Sources */,
 				A279C80A2190960E005C8362 /* ExtensionsViewController.swift in Sources */,
 				A279C7DE218C1521005C8362 /* PickerViewController.swift in Sources */,

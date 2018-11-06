@@ -66,7 +66,7 @@ extension Date {
 }
 
 extension UIView {
-    @IBInspectable var ViewCorner: CGFloat {
+    @IBInspectable var ViewCorner: CGFloat {    // @IB -> design component 
         get {
             return layer.cornerRadius
             

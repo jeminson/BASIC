@@ -30,7 +30,6 @@ class SearchBarTableViewController: UITableViewController, UISearchResultsUpdati
         
     }
     
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let array = filteredArray else {
             return 0
@@ -64,3 +63,4 @@ class SearchBarTableViewController: UITableViewController, UISearchResultsUpdati
     }
 
 }
+

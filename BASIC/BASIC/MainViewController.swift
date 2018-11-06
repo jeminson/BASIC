@@ -65,6 +65,40 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let topicTitle : String = topicArray[indexPath.section][String(indexPath.row)]!
+        
+        setAlertMessage(title: topicTitle)
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "Main"
+        
+        if let path = Bundle.main.path(forResource: "Topic", ofType: "plist") {
+            let array = NSArray(contentsOfFile: path)
+            
+            topicArray = array as! [[String : String]]
+        }
+        
+        if let path = Bundle.main.path(forResource: "Subtitle", ofType: "plist") {
+            let array = NSArray(contentsOfFile: path)
+            
+            subTitleArray = array as! [[String : String]]
+        }
+    }
+
+
+}
+
+
+
+extension MainViewController {
+    
     func setAlertMessage(title: String) {
         let alertController = UIAlertController(title: "Go Go Go", message: "Let's check it out!", preferredStyle: .alert)
         
@@ -122,6 +156,21 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
+            case "Notification":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "FirstNotificationViewController") as? FirstNotificationViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+            case "Queue":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "QueueViewController") as? QueueViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
+            case "Keyboard":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "KeyboardViewController") as? KeyboardViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             default:
                 break
             }
@@ -134,32 +183,4 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         present(alertController, animated: true, completion: nil)
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let topicTitle : String = topicArray[indexPath.section][String(indexPath.row)]!
-        
-        setAlertMessage(title: topicTitle)
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = "Main"
-        
-        if let path = Bundle.main.path(forResource: "Topic", ofType: "plist") {
-            let array = NSArray(contentsOfFile: path)
-            
-            topicArray = array as! [[String : String]]
-        }
-        
-        if let path = Bundle.main.path(forResource: "Subtitle", ofType: "plist") {
-            let array = NSArray(contentsOfFile: path)
-            
-            subTitleArray = array as! [[String : String]]
-        }
-    }
-
-
 }
-

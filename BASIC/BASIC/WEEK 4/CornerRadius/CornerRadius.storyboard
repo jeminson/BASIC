@@ -27,7 +27,7 @@
                                         <color key="value" red="0.74507847367522939" green="0.34258446357601569" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="viewBorderWidth">
-                                        <real key="value" value="3"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="ViewCorner">
                                         <real key="value" value="10"/>
