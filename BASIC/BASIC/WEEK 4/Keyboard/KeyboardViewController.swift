@@ -8,8 +8,9 @@
 
 import UIKit
 
-class KeyboardViewController: UIViewController {
+class KeyboardViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var bottomContraint: NSLayoutConstraint!
     @IBOutlet weak var keyboardTextField: UITextField!
     
     override func viewDidLoad() {
@@ -24,12 +25,36 @@ class KeyboardViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-        
+        // finding the keyboard height
+        if let userinfo = notification.userInfo {
+            let duration = userinfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
+            if let keyboardSize = (userinfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                
+                self.bottomContraint.constant += keyboardSize.height
+            }
+            UIView.animate(withDuration: duration) {
+                self.view.layoutIfNeeded()
+            }
+        }
     }
+    
     @objc func keyboardWillHide(notification: NSNotification) {
+        if let userinfo = notification.userInfo {
+            
+            let duration = userinfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
+            self.bottomContraint.constant = 171
+            
+            UIView.animate(withDuration: duration) {
+                self.view.layoutIfNeeded()
+            }
+        }
         
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true 
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
