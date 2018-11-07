@@ -11,6 +11,7 @@ import UIKit
 class ImageFromServerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var idLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

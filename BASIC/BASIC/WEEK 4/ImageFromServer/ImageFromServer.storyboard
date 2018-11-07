@@ -22,25 +22,43 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageFromServerTableViewCell" rowHeight="231" id="sfr-CD-EVv" customClass="ImageFromServerTableViewCell" customModule="BASIC" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="231"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageFromServerTableViewCell" rowHeight="155" id="sfr-CD-EVv" customClass="ImageFromServerTableViewCell" customModule="BASIC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sfr-CD-EVv" id="yp1-Sh-Zmz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="230.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0XB-as-RFQ">
-                                                    <rect key="frame" x="52" y="40" width="270" height="149.5"/>
+                                                    <rect key="frame" x="15" y="27" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="LBK-nW-unl"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Mlw-qB-60l"/>
+                                                    </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umw-9U-PP5">
+                                                    <rect key="frame" x="139" y="27" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="gTb-hE-1dk"/>
+                                                        <constraint firstAttribute="width" constant="42" id="lXd-uk-Mo6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="0XB-as-RFQ" secondAttribute="trailing" constant="53" id="2lh-Jn-fQO"/>
-                                                <constraint firstItem="0XB-as-RFQ" firstAttribute="leading" secondItem="yp1-Sh-Zmz" secondAttribute="leading" constant="52" id="40X-Qf-a08"/>
-                                                <constraint firstAttribute="bottom" secondItem="0XB-as-RFQ" secondAttribute="bottom" constant="41" id="M5n-p8-uoB"/>
-                                                <constraint firstItem="0XB-as-RFQ" firstAttribute="top" secondItem="yp1-Sh-Zmz" secondAttribute="top" constant="40" id="tVE-CF-Kd6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Umw-9U-PP5" secondAttribute="bottom" constant="96" id="2cb-RL-RFg"/>
+                                                <constraint firstItem="0XB-as-RFQ" firstAttribute="leading" secondItem="yp1-Sh-Zmz" secondAttribute="leading" constant="15" id="G19-TN-nJo"/>
+                                                <constraint firstAttribute="trailing" secondItem="0XB-as-RFQ" secondAttribute="trailing" constant="260" id="LNs-6y-DK9"/>
+                                                <constraint firstItem="Umw-9U-PP5" firstAttribute="leading" secondItem="0XB-as-RFQ" secondAttribute="trailing" constant="24" id="iby-0v-7wq"/>
+                                                <constraint firstItem="0XB-as-RFQ" firstAttribute="top" secondItem="yp1-Sh-Zmz" secondAttribute="top" constant="27" id="kn0-hP-NLp"/>
+                                                <constraint firstItem="Umw-9U-PP5" firstAttribute="top" secondItem="yp1-Sh-Zmz" secondAttribute="topMargin" constant="16" id="qtd-3z-wTu"/>
+                                                <constraint firstAttribute="bottom" secondItem="0XB-as-RFQ" secondAttribute="bottom" constant="27.5" id="sMT-rY-MFL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="idLabel" destination="Umw-9U-PP5" id="Ke8-kY-OHp"/>
                                             <outlet property="imgView" destination="0XB-as-RFQ" id="3y6-fY-pLM"/>
                                         </connections>
                                     </tableViewCell>

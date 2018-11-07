@@ -8,12 +8,16 @@
 
 import UIKit
 
+
+
 class ImageFromServerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var fetchDataTableView: UITableView!
     
     let urlString = "https://jsonplaceholder.typicode.com/albums/1/photos"
+    var idLabelArray = [Int]()
     var imageArray = [String]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,115 +37,51 @@ class ImageFromServerViewController: UIViewController, UITableViewDataSource, UI
         let imgURL = NSURL(string: imageArray[indexPath.row])
         let data = NSData(contentsOf: (imgURL)! as URL)
         
+        cell.idLabel.text = String(idLabelArray[indexPath.row])
         cell.imgView.image = UIImage(data: data! as Data)
         
         return cell
     }
     
+}
+
+extension ImageFromServerViewController {
+    
     func downloadJSON() {
-        let url = URL(string: urlString)
-        URLSession.shared.dataTask(with: (url)!, completionHandler: { (data, response, error) -> Void in
-            
-            if let jsonResponse = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [[String: Any]] {
-                
-                for item in jsonResponse! {
-                    if let thumburl = item["thumbnailUrl"] as? String {
-                        self.imageArray.append(thumburl)
+        
+        DispatchQueue.global(qos: .background).async {
+            print("In background")
+            guard let url = URL(string: self.urlString) else {return}
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                guard let dataResponse = data, error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return
+                } // End guard let dataResponse
+                do {
+                    let jsonResponse = try JSONSerialization.jsonObject(with: dataResponse) as? [[String: Any]]
+                    
+                    for item in jsonResponse! {
+                        if let idNum = item["id"] as? Int {
+                            self.idLabelArray.append(idNum)
+                        }
+                        
+                        if let thumbUrl = item["thumbnailUrl"] as? String {
+                            self.imageArray.append(thumbUrl)
+                        }
                     }
                     
-                    OperationQueue.main.addOperation ({
+                    DispatchQueue.main.async {
                         self.fetchDataTableView.reloadData()
-                    })
+                    }
                     
-                    
-                }
-               
-                
-            }
-    
-        }).resume()
-        
-    }
-    
-    
-    
-    
-    
-    
-}
-//
-//extension ImageFromServerViewController {
-//
-//    func downloadImage() {
-//
-//        DispatchQueue.global(qos: .background).async {
-//            print("In background")
-//            guard let url = URL(string: "https://jsonplaceholder.typicode.com/albums/1/photos") else {return}
-//            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-//                guard let dataResponse = data,
-//                    error == nil else {
-//                        print(error?.localizedDescription ?? "Response Error")
-//                        return }
-//                do{
-//
-//                    let jsonResponse = try JSONSerialization.jsonObject(with:
-//                        dataResponse) as? [[String: Any]]
-//
-//                    print("Downloaded image")
-//
-//                    for item in jsonResponse! {
-//                        if let url = item["url"] as? String {
-////                            print(url)
-//                            self.imageArray.append(url)
-//                        }
-//                    }
-//                    print(self.imageArray)
-////
-////                    OperationQueue.main.addOperation({
-////                        self.tableView.reloadData()
-////                    })
-////
-//                    DispatchQueue.main.async {
-//                        print("dispatched to main")
-//                        self.tableView.reloadData()
-//                    }
-//
-//                } catch let parsingError {
-//                    print("Error", parsingError)
-//                }
-//            }
-//            task.resume()
-//        }
-//    }
-//}
-
-//
-//
-//func getImageFromServer() {
-//
-//    guard let url = URL(string: "https://jsonplaceholder.typicode.com/albums/1/photos") else {return}
-//    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-//        guard let dataResponse = data,
-//            error == nil else {
-//                print(error?.localizedDescription ?? "Response Error")
-//                return }
-//        do{
-//            let jsonResponse = try JSONSerialization.jsonObject(with:
-//                dataResponse) as? [[String: Any]]
-//
-//            for item in jsonResponse! {
-//                if let url = item["url"] as? String {
-//
-//                    DispatchQueue.main.async {
-//                        //                            print("dispatched to main")
-//                        self.imageArray.append(url)
-//                        //self.afterJSON()
-//                    }
-//                }
-//            }
-//        } catch let parsingError {
-//            print("Error", parsingError)
-//        }
-//    }
-//    task.resume()
-//}
+//                    OperationQueue.main.addOperation ({
+//                        self.fetchDataTableView.reloadData()
+//                    })
+                } catch let parsingError {
+                    print("Error", parsingError)
+                } // do & catch
+            } // End task
+            task.resume()
+        } // End DispatchQueue.global
+    } // End downloadJSON()
+} // End ImageFromServerViewController
