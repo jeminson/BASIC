@@ -54,6 +54,9 @@
 		A279C81A2190AC17005C8362 /* SecondNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C8192190AC17005C8362 /* SecondNotificationViewController.swift */; };
 		A279C81C2190B067005C8362 /* ThirdNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C81B2190B067005C8362 /* ThirdNotificationViewController.swift */; };
 		A279C81E2190B0E3005C8362 /* FourthNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C81D2190B0E3005C8362 /* FourthNotificationViewController.swift */; };
+		A295A3162192B45700A3CA33 /* ImageFromServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3152192B45700A3CA33 /* ImageFromServerViewController.swift */; };
+		A295A3182192B46400A3CA33 /* ImageFromServer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A295A3172192B46400A3CA33 /* ImageFromServer.storyboard */; };
+		A295A31A2192B5EF00A3CA33 /* ImageFromServerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3192192B5EF00A3CA33 /* ImageFromServerTableViewCell.swift */; };
 		A29915CB2190DB1100F1908E /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A29915CA2190DB1100F1908E /* Queue.storyboard */; };
 		A29915CD2190DB2300F1908E /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29915CC2190DB2300F1908E /* QueueViewController.swift */; };
 		A2ADAAD72191F1BD00B26D2B /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ADAAD62191F1BD00B26D2B /* Keyboard.storyboard */; };
@@ -110,6 +113,9 @@
 		A279C8192190AC17005C8362 /* SecondNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNotificationViewController.swift; sourceTree = "<group>"; };
 		A279C81B2190B067005C8362 /* ThirdNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNotificationViewController.swift; sourceTree = "<group>"; };
 		A279C81D2190B0E3005C8362 /* FourthNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthNotificationViewController.swift; sourceTree = "<group>"; };
+		A295A3152192B45700A3CA33 /* ImageFromServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromServerViewController.swift; sourceTree = "<group>"; };
+		A295A3172192B46400A3CA33 /* ImageFromServer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageFromServer.storyboard; sourceTree = "<group>"; };
+		A295A3192192B5EF00A3CA33 /* ImageFromServerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromServerTableViewCell.swift; sourceTree = "<group>"; };
 		A29915CA2190DB1100F1908E /* Queue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
 		A29915CC2190DB2300F1908E /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
 		A2ADAAD62191F1BD00B26D2B /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
@@ -277,6 +283,7 @@
 				A279C806219093E5005C8362 /* Extensions */,
 				A279C8142190A8C7005C8362 /* Notification */,
 				A29915C92190DAF600F1908E /* Queue */,
+				A2ADAADA2192A3AE00B26D2B /* ImageFromServer */,
 			);
 			path = "WEEK 4";
 			sourceTree = "<group>";
@@ -328,6 +335,16 @@
 				A2ADAAD82191F1CD00B26D2B /* KeyboardViewController.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		A2ADAADA2192A3AE00B26D2B /* ImageFromServer */ = {
+			isa = PBXGroup;
+			children = (
+				A295A3172192B46400A3CA33 /* ImageFromServer.storyboard */,
+				A295A3152192B45700A3CA33 /* ImageFromServerViewController.swift */,
+				A295A3192192B5EF00A3CA33 /* ImageFromServerTableViewCell.swift */,
+			);
+			path = ImageFromServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +412,7 @@
 				A207756D218AA00B00D97B5F /* Assets.xcassets in Resources */,
 				A279C7DC218C1512005C8362 /* Picker.storyboard in Resources */,
 				A279C7E3218CBF67005C8362 /* PersonTableView.storyboard in Resources */,
+				A295A3182192B46400A3CA33 /* ImageFromServer.storyboard in Resources */,
 				A2077586218AB0F700D97B5F /* Fizzbuzz.storyboard in Resources */,
 				A20775B1218B953600D97B5F /* Plist.storyboard in Resources */,
 				A20775AD218B916800D97B5F /* Person.plist in Resources */,
@@ -420,6 +438,7 @@
 				A20775A0218B523C00D97B5F /* DateViewController.swift in Sources */,
 				A279C7EB218CC451005C8362 /* PersonInformation.swift in Sources */,
 				A279C7F2218CF493005C8362 /* SearchBarTableViewController.swift in Sources */,
+				A295A3162192B45700A3CA33 /* ImageFromServerViewController.swift in Sources */,
 				A207757A218AA22E00D97B5F /* RoundButton.swift in Sources */,
 				A279C80E219097ED005C8362 /* Utility.swift in Sources */,
 				A279C81E2190B0E3005C8362 /* FourthNotificationViewController.swift in Sources */,
@@ -436,6 +455,7 @@
 				A279C80C21909693005C8362 /* ExtensionsTableViewCell.swift in Sources */,
 				A279C7E7218CC10D005C8362 /* PersonInfoTableViewController.swift in Sources */,
 				A207758B218AB53F00D97B5F /* TimerViewController.swift in Sources */,
+				A295A31A2192B5EF00A3CA33 /* ImageFromServerTableViewCell.swift in Sources */,
 				A20775A6218B64C200D97B5F /* ContactInfoTableViewCell.swift in Sources */,
 				A20775B3218B98C700D97B5F /* PlistTableViewCell.swift in Sources */,
 				A20775AF218B94EB00D97B5F /* PlistViewController.swift in Sources */,

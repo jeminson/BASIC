@@ -107,7 +107,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="DateViewController" storyboardName="Date" referencedIdentifier="DateViewController" id="Tgu-eb-RNO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Va-UO-WRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1216" y="-130"/>
+            <point key="canvasLocation" x="1214" y="-138"/>
         </scene>
         <!--FizzbuzzViewController-->
         <scene sceneID="2wo-R6-Ehm">
@@ -115,7 +115,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="FizzbuzzViewController" storyboardName="Fizzbuzz" referencedIdentifier="FizzbuzzViewController" id="2BH-tg-mK6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvt-KB-b4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1235" y="-97"/>
+            <point key="canvasLocation" x="1235" y="-112"/>
         </scene>
         <!--PersonTableViewController-->
         <scene sceneID="l5x-Ek-qkY">
@@ -123,7 +123,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PersonTableViewController" storyboardName="PersonTableView" referencedIdentifier="PersonTableViewController" id="THy-Fd-cE0" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrm-CR-9he" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="-64"/>
+            <point key="canvasLocation" x="1251" y="-85"/>
         </scene>
         <!--PickerViewController-->
         <scene sceneID="0UN-UA-IVV">
@@ -131,7 +131,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PickerViewController" storyboardName="Picker" referencedIdentifier="PickerViewController" id="tqy-Kb-6RN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ddq-Nj-UOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221" y="-30"/>
+            <point key="canvasLocation" x="1222" y="-58"/>
         </scene>
         <!--PlistViewController-->
         <scene sceneID="3CT-Dd-Vg7">
@@ -139,7 +139,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PlistViewController" storyboardName="Plist" referencedIdentifier="PlistViewController" id="arP-Mk-xdY" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjg-ok-5k9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="4"/>
+            <point key="canvasLocation" x="1214" y="-32"/>
         </scene>
         <!--SearchBarTableViewController-->
         <scene sceneID="CAI-Wi-0bd">
@@ -147,7 +147,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="SearchBarTableViewController" storyboardName="SearchBar" referencedIdentifier="SearchBarTableViewController" id="txN-1X-fnY" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcQ-b9-kAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266" y="38"/>
+            <point key="canvasLocation" x="1268" y="-5"/>
         </scene>
         <!--TimerViewController-->
         <scene sceneID="b06-Lq-qGF">
@@ -155,7 +155,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="TimerViewController" storyboardName="Timer" referencedIdentifier="TimerViewController" id="XnE-vi-fQU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tf-HA-lkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="69"/>
+            <point key="canvasLocation" x="1217" y="26"/>
         </scene>
         <!--ExtensionsViewController-->
         <scene sceneID="Ifs-CM-a73">
@@ -163,7 +163,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="ExtensionsViewController" storyboardName="Extensions" referencedIdentifier="ExtensionsViewController" id="Q3D-gW-hsi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfv-M1-X5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1243" y="166"/>
+            <point key="canvasLocation" x="1242" y="176"/>
         </scene>
         <!--CornerRadiusViewController-->
         <scene sceneID="hjv-ph-EkY">
@@ -171,7 +171,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="CornerRadiusViewController" storyboardName="CornerRadius" referencedIdentifier="CornerRadiusViewController" id="TnR-dP-Njr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNk-3m-OKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1257" y="198"/>
+            <point key="canvasLocation" x="1254" y="202"/>
         </scene>
         <!--FirstNotificationViewController-->
         <scene sceneID="AOa-wx-Cyd">
@@ -187,7 +187,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="QueueViewController" storyboardName="Queue" referencedIdentifier="QueueViewController" id="gQs-em-9vO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDk-gX-NVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="264"/>
+            <point key="canvasLocation" x="1218" y="255"/>
         </scene>
         <!--KeyboardViewController-->
         <scene sceneID="AWx-Z6-pb0">
@@ -195,7 +195,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="KeyboardViewController" storyboardName="Keyboard" referencedIdentifier="KeyboardViewController" id="i7p-4f-B1g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51X-XM-TdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="303"/>
+            <point key="canvasLocation" x="1234" y="282"/>
+        </scene>
+        <!--ImageFromServerViewController-->
+        <scene sceneID="09e-xG-QcK">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ImageFromServerViewController" storyboardName="ImageFromServer" referencedIdentifier="ImageFromServerViewController" id="Fdz-dh-mn1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzI-lQ-d54" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="314"/>
         </scene>
     </scenes>
 </document>

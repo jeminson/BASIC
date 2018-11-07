@@ -53,6 +53,8 @@
 		<string>Queue</string>
 		<key>4</key>
 		<string>Keyboard</string>
+		<key>5</key>
+		<string>ImageFromServer</string>
 	</dict>
 </array>
 </plist>

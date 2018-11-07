@@ -171,6 +171,12 @@ extension MainViewController {
                     
                     self.navigationController?.pushViewController(controller, animated: true)
                 }
+                
+            case "ImageFromServer":
+                if let controller = self.storyboard?.instantiateViewController(withIdentifier: "ImageFromServerViewController") as? ImageFromServerViewController {
+                    
+                    self.navigationController?.pushViewController(controller, animated: true)
+                }
             default:
                 break
             }

@@ -47,9 +47,11 @@
 		<key>2</key>
 		<string></string>
 		<key>3</key>
-		<string></string>
+		<string>GCD</string>
 		<key>4</key>
 		<string>Keyboard show/hide </string>
+		<key>5</key>
+		<string>Fetch list of images from server</string>
 	</dict>
 </array>
 </plist>
