@@ -53,10 +53,12 @@ extension TableViewDelegateDateSource: UITableViewDataSource {
 
 extension TableViewDelegateDateSource: UITableViewDelegate {
 
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let value = data[indexPath.row]
         delegate?.didSelectRow(data: value)
+        
+        
+        
         
         print(value)
     }

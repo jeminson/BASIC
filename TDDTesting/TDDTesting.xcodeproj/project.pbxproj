@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A295A3372194A7A900A3CA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3362194A7A900A3CA33 /* AppDelegate.swift */; };
-		A295A3392194A7A900A3CA33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3382194A7A900A3CA33 /* ViewController.swift */; };
+		A295A3392194A7A900A3CA33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3382194A7A900A3CA33 /* MainViewController.swift */; };
 		A295A33C2194A7A900A3CA33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A295A33A2194A7A900A3CA33 /* Main.storyboard */; };
 		A295A33E2194A7AB00A3CA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A295A33D2194A7AB00A3CA33 /* Assets.xcassets */; };
 		A295A3412194A7AB00A3CA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A295A33F2194A7AB00A3CA33 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,7 @@
 		A295A35B2194AF9400A3CA33 /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35A2194AF9400A3CA33 /* TableViewTest.swift */; };
 		A295A35D2194AFD800A3CA33 /* TableViewDelegateDateSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35C2194AFD800A3CA33 /* TableViewDelegateDateSource.swift */; };
 		A295A3602194BC7700A3CA33 /* TableViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35E2194BC7300A3CA33 /* TableViewDelegateMock.swift */; };
+		A295A3622194CD4000A3CA33 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3612194CD4000A3CA33 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,7 @@
 /* Begin PBXFileReference section */
 		A295A3332194A7A900A3CA33 /* TDDTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A295A3362194A7A900A3CA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A295A3382194A7A900A3CA33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A295A3382194A7A900A3CA33 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A295A33B2194A7A900A3CA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A295A33D2194A7AB00A3CA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A295A3402194A7AB00A3CA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		A295A35A2194AF9400A3CA33 /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
 		A295A35C2194AFD800A3CA33 /* TableViewDelegateDateSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateDateSource.swift; sourceTree = "<group>"; };
 		A295A35E2194BC7300A3CA33 /* TableViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateMock.swift; sourceTree = "<group>"; };
+		A295A3612194CD4000A3CA33 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				A295A3362194A7A900A3CA33 /* AppDelegate.swift */,
-				A295A3382194A7A900A3CA33 /* ViewController.swift */,
 				A295A33A2194A7A900A3CA33 /* Main.storyboard */,
+				A295A3382194A7A900A3CA33 /* MainViewController.swift */,
+				A295A3612194CD4000A3CA33 /* SecondViewController.swift */,
 				A295A3562194A7D500A3CA33 /* SingletonClass.swift */,
 				A295A35C2194AFD800A3CA33 /* TableViewDelegateDateSource.swift */,
 				A295A33D2194A7AB00A3CA33 /* Assets.xcassets */,
@@ -213,8 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A295A3572194A7D500A3CA33 /* SingletonClass.swift in Sources */,
-				A295A3392194A7A900A3CA33 /* ViewController.swift in Sources */,
+				A295A3392194A7A900A3CA33 /* MainViewController.swift in Sources */,
 				A295A3372194A7A900A3CA33 /* AppDelegate.swift in Sources */,
+				A295A3622194CD4000A3CA33 /* SecondViewController.swift in Sources */,
 				A295A35D2194AFD800A3CA33 /* TableViewDelegateDateSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

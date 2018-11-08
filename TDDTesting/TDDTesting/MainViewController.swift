@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    
     @IBOutlet weak var tblView: UITableView!
     
     var dataSourceDelegate: TableViewDelegateDateSource!
@@ -23,8 +24,24 @@ class ViewController: UIViewController {
         dataSourceDelegate = TableViewDelegateDateSource(data: ["Jemin", "Yeji", "David", "Yoonku"])
         tblView.dataSource = dataSourceDelegate
         tblView.delegate = dataSourceDelegate
+        dataSourceDelegate.delegate = self
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let data = sender as? String {
+            if let dest = segue.destination as? SecondViewController {
+                dest.data = data
+            }
+        }
+    }
+    
 }
 
+extension MainViewController: TableViewRowSelectionProtocol {
+    func didSelectRow(data: String) {
+        
+        performSegue(withIdentifier: "go", sender: data)
+        
+    }
+}
