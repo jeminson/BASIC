@@ -8,9 +8,16 @@
 
 import UIKit
 
+
+protocol TableViewRowSelectionProtocol {
+    func didSelectRow(data: String)
+}
+
 class TableViewDelegateDateSource: NSObject {
     
     let data: [String]
+    var delegate: TableViewRowSelectionProtocol?
+    
     init(data: [String]) {
         
         self.data = data
@@ -20,10 +27,18 @@ class TableViewDelegateDateSource: NSObject {
 }
 
 extension TableViewDelegateDateSource: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        //return rows based on complex logic
         return data.count
     }
     
+    // This cannot be done on test case
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
@@ -33,4 +48,16 @@ extension TableViewDelegateDateSource: UITableViewDataSource {
     }
     
     
+}
+
+
+extension TableViewDelegateDateSource: UITableViewDelegate {
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let value = data[indexPath.row]
+        delegate?.didSelectRow(data: value)
+        
+        print(value)
+    }
 }

@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
         dataSourceDelegate = TableViewDelegateDateSource(data: ["Jemin", "Yeji", "David", "Yoonku"])
         tblView.dataSource = dataSourceDelegate
+        tblView.delegate = dataSourceDelegate
     }
 
 

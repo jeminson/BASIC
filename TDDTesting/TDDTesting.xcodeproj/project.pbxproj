@@ -17,6 +17,7 @@
 		A295A3592194A7E700A3CA33 /* SingletonClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A3582194A7E700A3CA33 /* SingletonClassTest.swift */; };
 		A295A35B2194AF9400A3CA33 /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35A2194AF9400A3CA33 /* TableViewTest.swift */; };
 		A295A35D2194AFD800A3CA33 /* TableViewDelegateDateSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35C2194AFD800A3CA33 /* TableViewDelegateDateSource.swift */; };
+		A295A3602194BC7700A3CA33 /* TableViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A295A35E2194BC7300A3CA33 /* TableViewDelegateMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A295A3582194A7E700A3CA33 /* SingletonClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClassTest.swift; sourceTree = "<group>"; };
 		A295A35A2194AF9400A3CA33 /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
 		A295A35C2194AFD800A3CA33 /* TableViewDelegateDateSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateDateSource.swift; sourceTree = "<group>"; };
+		A295A35E2194BC7300A3CA33 /* TableViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A295A34B2194A7AB00A3CA33 /* TDDTestingTests.swift */,
 				A295A3582194A7E700A3CA33 /* SingletonClassTest.swift */,
 				A295A35A2194AF9400A3CA33 /* TableViewTest.swift */,
+				A295A35E2194BC7300A3CA33 /* TableViewDelegateMock.swift */,
 				A295A34D2194A7AB00A3CA33 /* Info.plist */,
 			);
 			path = TDDTestingTests;
@@ -222,6 +225,7 @@
 			files = (
 				A295A35B2194AF9400A3CA33 /* TableViewTest.swift in Sources */,
 				A295A3592194A7E700A3CA33 /* SingletonClassTest.swift in Sources */,
+				A295A3602194BC7700A3CA33 /* TableViewDelegateMock.swift in Sources */,
 				A295A34C2194A7AB00A3CA33 /* TDDTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
