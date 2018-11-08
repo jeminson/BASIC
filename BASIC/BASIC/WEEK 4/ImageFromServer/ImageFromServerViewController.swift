@@ -34,13 +34,32 @@ class ImageFromServerViewController: UIViewController, UITableViewDataSource, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageFromServerTableViewCell") as! ImageFromServerTableViewCell
         
-        let imgURL = NSURL(string: imageArray[indexPath.row])
-        let data = NSData(contentsOf: (imgURL)! as URL)
-        
+//        let imgURL = NSURL(string: imageArray[indexPath.row])
+//        let data = NSData(contentsOf: (imgURL)! as URL)
+//
         cell.idLabel.text = String(idLabelArray[indexPath.row])
-        cell.imgView.image = UIImage(data: data! as Data)
+//        cell.imgView.image = UIImage(data: data! as Data)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        DispatchQueue.global(qos: .background).async {
+            let imgURL = NSURL(string: self.imageArray[indexPath.row])
+            let data = NSData(contentsOf: (imgURL)! as URL)
+            
+            DispatchQueue.main.async {
+                (cell as! ImageFromServerTableViewCell).imgView.image = UIImage(data: data! as Data)
+            }
+        }
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! ImageFromServerTableViewCell).imgView.image = nil
+
     }
     
 }

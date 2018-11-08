@@ -80,10 +80,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lib-HR-nHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UsW-J7-JcL"/>
-                            <constraint firstItem="lib-HR-nHY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bui-Ia-tnf"/>
-                            <constraint firstItem="lib-HR-nHY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q2O-DR-hrD"/>
-                            <constraint firstItem="lib-HR-nHY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yUf-Jd-9dR"/>
+                            <constraint firstItem="lib-HR-nHY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I73-JK-IQc"/>
+                            <constraint firstItem="lib-HR-nHY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JxI-uT-kNg"/>
+                            <constraint firstItem="lib-HR-nHY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hzq-d3-yGu"/>
+                            <constraint firstItem="lib-HR-nHY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lnd-d4-sHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
