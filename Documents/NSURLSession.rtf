@@ -1,0 +1,248 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf760
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red50\green50\blue50;\red109\green109\blue109;\red29\green29\blue29;
+\red11\green87\blue42;\red14\green115\blue192;\red19\green20\blue21;\red20\green20\blue21;}
+{\*\expandedcolortbl;;\csgenericrgb\c19608\c19608\c19608;\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c11373\c11373\c11373;
+\csgenericrgb\c4314\c34118\c16471;\csgenericrgb\c5490\c45098\c75294;\csgenericrgb\c7451\c7843\c8235;\csgenericrgb\c7843\c7843\c8235;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww20280\viewh12960\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+The 
+\f1\fs24 \cf3 NSURLSession
+\f0\fs28 \cf2  class and related classes provide an API for downloading content. This API provides a rich set of delegate methods for supporting authentication and gives your app the ability to perform background downloads when your app is not running or, in iOS, while your app is suspended.\
+The 
+\f1\fs24 \cf3 NSURLSession
+\f0\fs28 \cf2  class natively supports the 
+\f1\fs24 \cf3 data
+\f0\fs28 \cf2 , 
+\f1\fs24 \cf3 file
+\f0\fs28 \cf2 , 
+\f1\fs24 \cf3 ftp
+\f0\fs28 \cf2 , 
+\f1\fs24 \cf3 http
+\f0\fs28 \cf2 , and 
+\f1\fs24 \cf3 https
+\f0\fs28 \cf2  URL schemes, with transparent support for proxy servers and SOCKS gateways, as configured in the user\'92s system preferences. You can also add support for your own custom networking protocols and URL schemes (for your app\'92s private use).
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+NSURLSessionTask\
+NSURLSessionTask is an abstract subclass, with three concrete subclasses that are used directly: NSURLSessionDataTask, NSURLSessionUploadTask, and NSURLSessionDownloadTask. These three classes encapsulate the three essential networking tasks of modern applications: fetching data, such as JSON or XML, and uploading and downloading files.\
+\
+\
+\
+When an NSURLSessionDataTask finishes, it has associated data, whereas an NSURLSessionDownloadTask finishes with a temporary file path for the downloaded file. NSURLSessionUploadTask inherits from NSURLSessionDataTask, since the server response of an upload often has associated data.  All tasks are cancelable, and can be paused and resumed. When a download task is canceled, it has the option to create resume data, which can then be passed when creating a new download task to pick up where it left off.
+\fs40 \cf4 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\
+\pard\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\b\fs52 \cf5 Why Use NSURLSession?\
+\pard\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\b0\fs32 \cf0 Why should you use 
+\fs28 \cf5 NSURLSession
+\fs32 \cf0 ? Well, it brings you a number of new advantages and benefits:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\parhyphenfactor20\partightenfactor0
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Background uploads and downloads:
+\b0 \cf0  With just a configuration option when the 
+\fs28 \cf5 NSURLSession
+\fs32 \cf0  is created, you get all the benefits of background networking. This helps with battery life, supports UIKit multitasking and uses the same delegate model as in-process transfers.\
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Ability to pause and resume networking operations:
+\b0 \cf0  As you will see later, with the NSURLSession API any networking task can be paused, stopped, and restarted. No NSOperation sub-classing necessary.\
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Configurable container:
+\b0 \cf0  Each 
+\fs28 \cf5 NSURLSession
+\fs32 \cf0  is the configurable container for putting requests into. For example, if you need to set an HTTP header option you will only need to do this once and each request in the session will have the same configuration.\
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Subclassable and private storage:
+\b0 \cf0  
+\fs28 \cf5 NSURLSession
+\fs32 \cf0  is subclassable and you can configure a session to use private storage on a per session basis. This allows you to have private storage objects outside of the global state.\
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Improved authentication handling:
+\b0 \cf0  Authentication is done on a specific connection basis. When using 
+\fs28 \cf5 NSURLConnection
+\fs32 \cf0  if an authentication challenge was issued, the challenge would come back for an arbitrary request, you wouldn\'92t know exactly what request was getting the challenge. With 
+\fs28 \cf5 NSURLSession
+\fs32 \cf0 , the delegate handles authentication. \
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Rich delegate model:
+\b0 \cf0  
+\fs28 \cf5 NSURLConnection
+\fs32 \cf0  has some asynchronous block based methods, however a delegate cannot be used with them. When the request is made it either works or fails, even if authentication was needed. With 
+\fs28 \cf5 NSURLSession
+\fs32 \cf0  you can have a hybrid approach, use the asynchronous block based methods and also setup a delegate to handle authentication.\
+\ls1\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Uploads and downloads through the file system:
+\b0 \cf0  This encourages the separation of the data (file contents) from the metadata (the URL and settings).\
+\pard\tx720\pardeftab720\parhyphenfactor20\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 The tasks within a given URL session share a common 
+\i session configuration object
+\i0 , which defines connection behavior, such as the maximum number of simultaneous connections to make to a single host, whether to allow connections over a cellular network, and so on. The behavior of a session is determined in part by which method you call when creating its configuration object:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+The singleton 
+\i shared session
+\i0  (which has no configuration object) is for basic requests. It is not as customizable as sessions that you create, but it serves as a good starting point if you have very limited requirements. You access this session by calling the 
+\f1\fs24 \cf6 sharedSession
+\f0\fs28 \cf2  class method. See that method\'92s discussion for more information about its limitations. \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs20 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\i\fs28 \cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Default sessions
+\i0  behave much like the shared session (unless you customize them further), but let you obtain data incrementally using a delegate. You can create a default session configuration by calling the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/clm/NSURLSessionConfiguration/defaultSessionConfiguration"}}{\fldrslt 
+\f1\fs24 \cf6 defaultSessionConfiguration}} method on the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/cl/NSURLSessionConfiguration"}}{\fldrslt 
+\f1\fs24 \cf6 NSURLSessionConfiguration}} class. \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs20 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\i\fs28 \cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Ephemeral sessions
+\i0  are similar to default sessions, but do not write caches, cookies, or credentials to disk. You can create an ephemeral session configuration by calling the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/clm/NSURLSessionConfiguration/ephemeralSessionConfiguration"}}{\fldrslt 
+\f1\fs24 \cf6 ephemeralSessionConfiguration}} method on the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/cl/NSURLSessionConfiguration"}}{\fldrslt 
+\f1\fs24 \cf6 NSURLSessionConfiguration}} class. \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs20 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\i\fs28 \cf2 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+Background sessions
+\i0  let you perform uploads and downloads of content in the background while your app is not running. You can create a background session configuration by calling the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/clm/NSURLSessionConfiguration/backgroundSessionConfiguration:"}}{\fldrslt 
+\f1\fs24 \cf6 backgroundSessionConfiguration:}} method on the {\field{\*\fldinst{HYPERLINK "https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSessionConfiguration_class/index.html#//apple_ref/occ/cl/NSURLSessionConfiguration"}}{\fldrslt 
+\f1\fs24 \cf6 NSURLSessionConfiguration}} class. 
+\fs20 \cf0 \
+\pard\tx720\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\fs32 \cf0 \
+\
+\
+\
+\
+\pard\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\b\fs52 \cf5 NSOperation vs. Grand Central Dispatch (GCD)\
+\pard\pardeftab720\parhyphenfactor20\partightenfactor0
+
+\b0\fs32 \cf0 You may have heard of {\field{\*\fldinst{HYPERLINK "http://developer.apple.com/library/ios/#documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html"}}{\fldrslt \cf5 \ul \ulc5 Grand Central Dispatch (GCD)}}. In a nutshell, GCD consists of language features, runtime libraries, and system enhancements to provide systemic and comprehensive improvements to support concurrency on multi-core hardware in iOS and OS X. If you\'92d like to learn more about GCD, you can read our {\field{\*\fldinst{HYPERLINK "http://www.raywenderlich.com/?p=4295"}}{\fldrslt \cf5 \ul \ulc5 Multithreading and Grand Central Dispatch on iOS for Beginners Tutorial}}.\
+
+\fs28 \cf5 NSOperation
+\fs32 \cf0  and 
+\fs28 \cf5 NSOperationQueue
+\fs32 \cf0  are built on top of GCD. As a very general rule, Apple recommends using the highest-level abstraction, and then dropping down to lower levels when measurements show they are needed.\
+Here\'92s a quick comparison of the two that will help you decide when and where to use GCD or 
+\fs28 \cf5 NSOperation
+\fs32 \cf0 :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\parhyphenfactor20\partightenfactor0
+\ls3\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+GCD
+\b0 \cf0  is a lightweight way to represent units of work that are going to be executed concurrently. You don\'92t schedule these units of work; the system takes care of scheduling for you. Adding dependency among blocks can be a headache. Canceling or suspending a block creates extra work for you as a developer! :]\
+\ls3\ilvl0
+\b \cf5 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+NSOperation
+\b0 \cf0  adds a little extra overhead compared to GCD, but you can add dependency among various operations and re-use, cancel or suspend them.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\parhyphenfactor20\partightenfactor0
+\ls3\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720\parhyphenfactor20\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs64 \cf0 Part 1: GCD (Grand Central Dispatch)\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 GCD is the most commonly used API to manage concurrent code and execute operations asynchronously at the Unix level of the system. GCD provides and manages queues of tasks. First, let\'92s see what queues are.\
+\pard\pardeftab720\partightenfactor0
+
+\fs54 \cf0 What are queues?\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 Queues are data structures that manage objects in the order of First-in, First-out (FIFO). Queues are similar to the lines at the ticket window of the movie theatre. The tickets are sold as first-come, first-serve. The people in the front of the line get to buy their tickets before the others in the line who arrived later. Queues in computer science are similar because the first object added to the queue is the first object to be removed from the queue.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs54 \cf0 Dispatch Queues\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 Dispatch queues are an easy way to perform tasks asynchronously and concurrently in your application. They are queues where tasks are being submitted by your app in form of blocks (Blocks of codes). There are two varieties of dispatch queues: (1) serial queues, & (2) concurrent queues. Before talking about the differences, you need to know that tasks assigned to both queues are being executed in separate threads than the thread they were created on. In other words, you create blocks of code and submit it to dispatch queues in the main thread. But all these tasks (Blocks of codes) will run in separate threads instead of the main thread.\
+\pard\pardeftab720\partightenfactor0
+
+\fs38 \cf8 Serial Queues\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 When you choose to create a queue as serial queue, the queue can only execute one task at a time. All tasks in the same serial queue will respect each other and execute serially. However, they don\'92t care about tasks in separate queues which means that you can still execute tasks concurrently by using multiple serial queues. For example, you can create two serial queues, each queue executes only one task at a time but up to two tasks could still execute concurrently.\
+Serial queues are awesome for managing a shared resource. It provides guaranteed serialized access to the shared resource and prevents race conditions. Imagine that there is a single ticket booth but there are a bunch of people who want to buy cinema tickets, here the staff at the booth is a shared resource. It\'92ll be chaotic if the staff has to serve these people all at the same time. To handle this situation, people are required to queue up (serial queue), so that the staff can serve the customers one at a time.\
+Again, it doesn\'92t mean the cinema can only handle one customer at a time. If it sets up two more booths, it can serve three customers at one time. This is why I said you can still perform multiple tasks in parallel by using several serial queues.\
+The advantages of using serial queues are:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Guaranteed serialized access to a shared resource that avoids race condition.\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Tasks are executed in a predictable order. When you submit tasks in a serial dispatch queue, they will be executed in the same order as they are inserted.\
+\ls4\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+You can create any number of serial queues.\
+\pard\pardeftab720\partightenfactor0
+
+\fs38 \cf8 Concurrent Queues\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 As the name suggests, concurrent queues allows you to execute multiple tasks in parallel. The tasks (blocks of codes) starts in the order in which they are added in the queue. But their execution all occur concurrently and they don\'92t have to wait for each other to start. Concurrent queues guarantee that tasks start in same order but you will not know the order of execution, execution time or the number of tasks being executed at a given point.\
+For example, you submit three tasks (task #1, #2 and #3) to a concurrent queue. The tasks are executed concurrently and are started in the order in which they were added to the queue. However, the execution time and finish time vary. Even it may take some time for task #2 and task #3 to start, they both can complete before task #1. It\'92s up to the system to decide the execution of the tasks.\
+\pard\pardeftab720\partightenfactor0
+
+\fs54 \cf0 Using Queues\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf7 Now that we have explained both serial and concurrent queues, it\'92s time to see how we can use them. By default, the system provides each application with a single serial queue and four concurrent queues. The main dispatch queue is the globally available serial queue that executes tasks on the application\'92s main thread. It is used to update the app UI and perform all tasks related to the update of UIViews. There is only one task to be executed at a time and this is why the UI is blocked when you run a heavy task in the main queue.\
+Besides the main queue, the system provides four concurrent queues. We call them Global Dispatch queues. These queues are global to the application and are differentiated only by their priority level. To use one of the global concurrent queues, you have to get a reference of your preferred queue using the function dispatch_get_global_queue which takes in the first parameter one of these values:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls5\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+DISPATCH_QUEUE_PRIORITY_HIGH\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+DISPATCH_QUEUE_PRIORITY_DEFAULT\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+DISPATCH_QUEUE_PRIORITY_LOW\
+\ls5\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+DISPATCH_QUEUE_PRIORITY_BACKGROUND\
+\pard\pardeftab720\partightenfactor0
+\cf7 These queue types represent the priority of execution. The queue with HIGH has the highest priority and BACKGROUND has the lowest priority. So you can decide the queue you use based on the priority of the task. Please also note that these queues are being used by Apple\'92s APIs so your tasks are not the only tasks in these queues.
+\fs32 \cf0 \
+}
