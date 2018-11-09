@@ -40,6 +40,7 @@ class ImageFromServerTests: XCTestCase {
             // Method 1. XCTAssertNil(apiError, "YOU'VE GOT AN ERROR!")         // ASSERTION STATEMENTS
             //           XCTAssertNotNil(imgData, "ERROR MSG!")
             
+            
             // Method 2. Use if statement
             if((apiError) == nil) {
                 // Test case should pass -> No error
@@ -62,7 +63,8 @@ class ImageFromServerTests: XCTestCase {
         
         dataTask.resume()
         
-        wait(for: [testExpectation], timeout: 4)
+        //wait(for: [testExpectation], timeout: 4)
+        self.waitForExpectations(timeout: 20, handler: nil)
     }
     
     
