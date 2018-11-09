@@ -89,7 +89,7 @@ extension ImageFromServerViewController {
                         }
                     }
                     
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async {              // Giving Priority to UI task
                         self.fetchDataTableView.reloadData()
                     }
                     
