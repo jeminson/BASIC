@@ -1,7 +1,7 @@
 # Date Picker Demo
-- Used UITextDelegate Methods
-- Used UIDatePicker 
-- Used UIView.animate & NSLayoutConstraints for show/hide DatePicker
+- Used **UITextDelegate** Methods
+- Used **UIDatePicker** 
+- Used **UIView.animate** & **NSLayoutConstraints** for show/hide DatePicker
 
 
 
