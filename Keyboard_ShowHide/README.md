@@ -1,5 +1,5 @@
 # Show & Hide Keyboard 
-- Used NotificationCenter to show & hide keyboard 
+- Used **NotificationCenter** to show & hide keyboard 
 
 
 
