@@ -1,7 +1,19 @@
 # Basic 
 
+## DatePickerDemo
+- Used **UITextDelegate** Methods
+- Used **UIDatePicker**
+- Used **UIView.animate** & **NSLayoutConstraints** for show/hide DatePicker
+- Used **Extension** to make the code look clean and nice
+
 ## Documents 
 - Something useful to read about Swift & Xcode
 
 ## Keyboard_ShowHide 
-- Using **NotificationCenter** to show & hide keyboard
+- Used **NotificationCenter** to show & hide keyboard
+- Used **Extension** to make the code look clean and nice
+- Used **NSLayoutConstraints** to help show/hide Keyboard 
+- Used **Extension** to make the code look clean and nice
+- Used **UITapGestureRecognizer** to hide keyboard when touching outside from the textfield 
+
+
