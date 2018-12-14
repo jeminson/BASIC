@@ -7,8 +7,8 @@
 
 
 ## Screenshots for each screen
-- Before Choosing Date View 
+- Before Choosing the Date
 <img src="https://github.com/jeminson/BASIC/blob/master/DatePickerDemo/Screenshots/before.png" width="200" height="400" />
 
-- Hide View 
+- After Choosing the Date
 <img src="https://github.com/jeminson/BASIC/blob/master/DatePickerDemo/Screenshots/after.png" width="200" height="400" />
