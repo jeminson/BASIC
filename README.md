@@ -17,3 +17,6 @@
 - Used **UITapGestureRecognizer** to hide keyboard when touching outside from the textfield 
 
 
+## SpinnerPickerDemo 
+- Used **UIPickerView** to use picker
+- Used **NSLayoutConstraint** to show/hide picker 
