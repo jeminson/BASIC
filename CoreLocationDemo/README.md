@@ -7,4 +7,4 @@
 
 ## Screenshots 
 - Shows current coordinate 
-<img src="https://github.com/jeminson/BASIC/blob/master/Keyboard_ShowHide/Screenshots/showKeyboard.png" width="200" height="400" />
+<img src="https://github.com/jeminson/BASIC/blob/master/CoreLocationDemo/Screenshots/HomeVC.png" width="200" height="400" />
