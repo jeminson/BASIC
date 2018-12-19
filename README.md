@@ -20,3 +20,6 @@
 ## SpinnerPickerDemo 
 - Used **UIPickerView** to use picker
 - Used **NSLayoutConstraint** to show/hide picker 
+
+## TouchIDDemo
+- Used **LocalAuthentication** framework 
