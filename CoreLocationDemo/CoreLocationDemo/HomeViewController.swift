@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var currentLatitudeLabel: UILabel!
     @IBOutlet weak var currentLongitudeLabel: UILabel!
+    @IBOutlet weak var currentCityNameLabel: UILabel!
     
     var locationManager : CLLocationManager = CLLocationManager()
     
@@ -22,8 +23,19 @@ class HomeViewController: UIViewController {
         title = "Current Location"
         
         currentLocation()
+        
+        lookUpCurrentLocation { placeMark in
+            
+            DispatchQueue.main.async {
+                self.currentCityNameLabel.text = "\((placeMark?.locality)!)"
+            }
+        }
     }
     
+}
+
+
+extension HomeViewController {
     func currentLocation() {
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -31,6 +43,27 @@ class HomeViewController: UIViewController {
         self.locationManager.requestLocation()
     }
     
+    func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?) -> Void ) {
+        // Use the last reported location.
+        if let lastLocation = self.locationManager.location {
+            let geocoder = CLGeocoder()
+            
+            // Look up the location and pass it to the completion handler
+            geocoder.reverseGeocodeLocation(lastLocation, completionHandler: { (placemarks, error) in
+                if error == nil {
+                    let firstLocation = placemarks?[0]
+                    completionHandler(firstLocation)
+                }
+                else {
+                    // An error occurred during geocoding.
+                    completionHandler(nil)
+                }
+            })
+        } else {
+            // No location was available.
+            completionHandler(nil)
+        }
+    }
 }
 
 // MARK: - CCLocationManager Delegate
