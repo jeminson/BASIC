@@ -1,5 +1,10 @@
 # Basic 
 
+## CoreLocationDemo
+- Used **CLLocationManagerDelegate** Methods 
+- Added **CoreLocation.framework**
+- Added **Usage Description Keys** for requesting location access (modified **plist**)
+
 ## DatePickerDemo
 - Used **UITextDelegate** Methods
 - Used **UIDatePicker**
