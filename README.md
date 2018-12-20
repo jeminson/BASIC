@@ -1,4 +1,4 @@
-# Basic 
+# Basic Swift
 
 ## CoreDataDemo
 - Used **CoreData.xcdatamodeld**
