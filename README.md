@@ -1,5 +1,9 @@
 # Basic 
 
+## CoreDataDemo
+- Used **CoreData.xcdatamodeld**
+- Used **CoreData framework** 
+
 ## CoreLocationDemo
 - Used **CLLocationManagerDelegate** Methods 
 - Added **CoreLocation.framework**
