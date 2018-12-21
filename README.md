@@ -25,6 +25,9 @@
 - Used **Extension** to make the code look clean and nice
 - Used **UITapGestureRecognizer** to hide keyboard when touching outside from the textfield 
 
+## MapKitDemo 
+- Used **MapKit** framework to use the **Apple map** 
+- Used **CoreLocation** framework to get the current location 
 
 ## SpinnerPickerDemo 
 - Used **UIPickerView** to use picker
