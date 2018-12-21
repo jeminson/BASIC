@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var currentCityNameLabel: UILabel!
     
     var locationManager : CLLocationManager = CLLocationManager()
+    let dispatchGroup = DispatchGroup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,6 @@ class HomeViewController: UIViewController {
         
         currentLocation()
         
-        lookUpCurrentLocation { placeMark in
-            
-            DispatchQueue.main.async {
-                self.currentCityNameLabel.text = "\((placeMark?.locality)!)"
-            }
-        }
     }
     
 }
@@ -40,7 +35,8 @@ extension HomeViewController {
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.requestLocation()
+//        self.locationManager.requestLocation()
+        self.locationManager.startUpdatingLocation()
     }
     
     func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?) -> Void ) {
@@ -74,6 +70,11 @@ extension HomeViewController: CLLocationManagerDelegate {
             DispatchQueue.main.async {
                 self.currentLatitudeLabel.text = "\(lat)"
                 self.currentLongitudeLabel.text = "\(long)"
+            }
+            self.lookUpCurrentLocation { placeMark in
+                DispatchQueue.main.async {
+                    self.currentCityNameLabel.text = "\((placeMark?.locality)!)"
+                }
             }
             
         } else {
