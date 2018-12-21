@@ -7,149 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16AA8B0DB1851022894AEC30 /* Pods_QuickAndNimbleUnitTestingDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8599BA83810E0AD884F518DA /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */; };
-		66A410A9A6D1FC8F6B9F4B75 /* Pods_QuickAndNimbleUnitTestingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BCF5AF246ED301A4738C1 /* Pods_QuickAndNimbleUnitTestingDemo.framework */; };
-		A25097C021CC3B29004C9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25097BF21CC3B29004C9836 /* AppDelegate.swift */; };
-		A25097C221CC3B29004C9836 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25097C121CC3B29004C9836 /* HomeViewController.swift */; };
-		A25097C521CC3B29004C9836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25097C321CC3B29004C9836 /* Main.storyboard */; };
-		A25097C721CC3B2A004C9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25097C621CC3B2A004C9836 /* Assets.xcassets */; };
-		A25097CA21CC3B2A004C9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25097C821CC3B2A004C9836 /* LaunchScreen.storyboard */; };
-		A25097D521CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25097D421CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */; };
-		A25097E121CC3CEC004C9836 /* CurrentWeatherSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25097E021CC3CEC004C9836 /* CurrentWeatherSpecs.swift */; };
+		404AE8AA0C38F6CF16E0B926 /* Pods_QuickAndNimbleUnitTestingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDA572CFBAD2FAC2577896A /* Pods_QuickAndNimbleUnitTestingDemo.framework */; };
+		90D1DB736E7E5A9A0AAAD214 /* Pods_QuickAndNimbleUnitTestingDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B234C82CFE745924F5CC703C /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */; };
+		A250981621CCC4A6004C9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250981521CCC4A6004C9836 /* AppDelegate.swift */; };
+		A250981821CCC4A6004C9836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250981721CCC4A6004C9836 /* ViewController.swift */; };
+		A250981B21CCC4A6004C9836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A250981921CCC4A6004C9836 /* Main.storyboard */; };
+		A250981D21CCC4A7004C9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A250981C21CCC4A7004C9836 /* Assets.xcassets */; };
+		A250982021CCC4A7004C9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A250981E21CCC4A7004C9836 /* LaunchScreen.storyboard */; };
+		A250982B21CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250982A21CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A25097D121CC3B2A004C9836 /* PBXContainerItemProxy */ = {
+		A250982721CCC4A8004C9836 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A25097B421CC3B29004C9836 /* Project object */;
+			containerPortal = A250980A21CCC4A6004C9836 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A25097BB21CC3B29004C9836;
+			remoteGlobalIDString = A250981121CCC4A6004C9836;
 			remoteInfo = QuickAndNimbleUnitTestingDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E7BCF5AF246ED301A4738C1 /* Pods_QuickAndNimbleUnitTestingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickAndNimbleUnitTestingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		739A1AAF04E8ADC68BA4FCDC /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemo/Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig"; sourceTree = "<group>"; };
-		8599BA83810E0AD884F518DA /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickAndNimbleUnitTestingDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25097BC21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickAndNimbleUnitTestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25097BF21CC3B29004C9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A25097C121CC3B29004C9836 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A25097C421CC3B29004C9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A25097C621CC3B2A004C9836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A25097C921CC3B2A004C9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A25097CB21CC3B2A004C9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25097D021CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickAndNimbleUnitTestingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A25097D421CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimbleUnitTestingDemoTests.swift; sourceTree = "<group>"; };
-		A25097D621CC3B2A004C9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25097E021CC3CEC004C9836 /* CurrentWeatherSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSpecs.swift; sourceTree = "<group>"; };
-		D541CC700783DF4AA415521D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D89A491CD5CA1B21324B46EE /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemo/Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F5C57AB6A497A1AFC8CC57D2 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F31D5F0659C92E395C0CB14 /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemo/Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		30592B14A86FBAC8B1DBEEE9 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C37EB520A688658CA55329D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A250981221CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickAndNimbleUnitTestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A250981521CCC4A6004C9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A250981721CCC4A6004C9836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A250981A21CCC4A6004C9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A250981C21CCC4A7004C9836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A250981F21CCC4A7004C9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A250982121CCC4A7004C9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A250982621CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickAndNimbleUnitTestingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A250982A21CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimbleUnitTestingDemoTests.swift; sourceTree = "<group>"; };
+		A250982C21CCC4A8004C9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDA572CFBAD2FAC2577896A /* Pods_QuickAndNimbleUnitTestingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickAndNimbleUnitTestingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B234C82CFE745924F5CC703C /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickAndNimbleUnitTestingDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB26C0A8E8C7D9482254F23F /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemo/Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A25097B921CC3B29004C9836 /* Frameworks */ = {
+		A250980F21CCC4A6004C9836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A410A9A6D1FC8F6B9F4B75 /* Pods_QuickAndNimbleUnitTestingDemo.framework in Frameworks */,
+				404AE8AA0C38F6CF16E0B926 /* Pods_QuickAndNimbleUnitTestingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A25097CD21CC3B2A004C9836 /* Frameworks */ = {
+		A250982321CCC4A8004C9836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16AA8B0DB1851022894AEC30 /* Pods_QuickAndNimbleUnitTestingDemoTests.framework in Frameworks */,
+				90D1DB736E7E5A9A0AAAD214 /* Pods_QuickAndNimbleUnitTestingDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28941AB4B0FF8E77929A7673 /* Frameworks */ = {
+		7B245BB653BE233165C94AE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E7BCF5AF246ED301A4738C1 /* Pods_QuickAndNimbleUnitTestingDemo.framework */,
-				8599BA83810E0AD884F518DA /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */,
+				AEDA572CFBAD2FAC2577896A /* Pods_QuickAndNimbleUnitTestingDemo.framework */,
+				B234C82CFE745924F5CC703C /* Pods_QuickAndNimbleUnitTestingDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8FA449319571ABF364C71C0B /* Pods */ = {
+		853D312077023A915A62A2F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D89A491CD5CA1B21324B46EE /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */,
-				739A1AAF04E8ADC68BA4FCDC /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */,
-				D541CC700783DF4AA415521D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */,
-				F5C57AB6A497A1AFC8CC57D2 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */,
+				CB26C0A8E8C7D9482254F23F /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */,
+				0F31D5F0659C92E395C0CB14 /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */,
+				6C37EB520A688658CA55329D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */,
+				30592B14A86FBAC8B1DBEEE9 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A25097B321CC3B29004C9836 = {
+		A250980921CCC4A6004C9836 = {
 			isa = PBXGroup;
 			children = (
-				A25097BE21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo */,
-				A25097D321CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests */,
-				A25097BD21CC3B29004C9836 /* Products */,
-				8FA449319571ABF364C71C0B /* Pods */,
-				28941AB4B0FF8E77929A7673 /* Frameworks */,
+				A250981421CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo */,
+				A250982921CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests */,
+				A250981321CCC4A6004C9836 /* Products */,
+				853D312077023A915A62A2F6 /* Pods */,
+				7B245BB653BE233165C94AE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A25097BD21CC3B29004C9836 /* Products */ = {
+		A250981321CCC4A6004C9836 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A25097BC21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo.app */,
-				A25097D021CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */,
+				A250981221CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo.app */,
+				A250982621CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A25097BE21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo */ = {
+		A250981421CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A25097BF21CC3B29004C9836 /* AppDelegate.swift */,
-				A25097C121CC3B29004C9836 /* HomeViewController.swift */,
-				A25097C321CC3B29004C9836 /* Main.storyboard */,
-				A25097C621CC3B2A004C9836 /* Assets.xcassets */,
-				A25097C821CC3B2A004C9836 /* LaunchScreen.storyboard */,
-				A25097CB21CC3B2A004C9836 /* Info.plist */,
+				A250981521CCC4A6004C9836 /* AppDelegate.swift */,
+				A250981721CCC4A6004C9836 /* ViewController.swift */,
+				A250981921CCC4A6004C9836 /* Main.storyboard */,
+				A250981C21CCC4A7004C9836 /* Assets.xcassets */,
+				A250981E21CCC4A7004C9836 /* LaunchScreen.storyboard */,
+				A250982121CCC4A7004C9836 /* Info.plist */,
 			);
 			path = QuickAndNimbleUnitTestingDemo;
 			sourceTree = "<group>";
 		};
-		A25097D321CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests */ = {
+		A250982921CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				A25097D421CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */,
-				A25097DF21CC3C76004C9836 /* ModelTest */,
-				A25097D621CC3B2A004C9836 /* Info.plist */,
+				A250982A21CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift */,
+				A250982C21CCC4A8004C9836 /* Info.plist */,
 			);
 			path = QuickAndNimbleUnitTestingDemoTests;
-			sourceTree = "<group>";
-		};
-		A25097DF21CC3C76004C9836 /* ModelTest */ = {
-			isa = PBXGroup;
-			children = (
-				A25097E021CC3CEC004C9836 /* CurrentWeatherSpecs.swift */,
-			);
-			path = ModelTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A25097BB21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo */ = {
+		A250981121CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A25097D921CC3B2A004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemo" */;
+			buildConfigurationList = A250982F21CCC4A8004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemo" */;
 			buildPhases = (
-				04AAD7A0FFA0F8AA184E16D3 /* [CP] Check Pods Manifest.lock */,
-				A25097B821CC3B29004C9836 /* Sources */,
-				A25097B921CC3B29004C9836 /* Frameworks */,
-				A25097BA21CC3B29004C9836 /* Resources */,
+				089495F1E82C98A77FADBADE /* [CP] Check Pods Manifest.lock */,
+				A250980E21CCC4A6004C9836 /* Sources */,
+				A250980F21CCC4A6004C9836 /* Frameworks */,
+				A250981021CCC4A6004C9836 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,49 +146,48 @@
 			);
 			name = QuickAndNimbleUnitTestingDemo;
 			productName = QuickAndNimbleUnitTestingDemo;
-			productReference = A25097BC21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo.app */;
+			productReference = A250981221CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A25097CF21CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests */ = {
+		A250982521CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A25097DC21CC3B2A004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemoTests" */;
+			buildConfigurationList = A250983221CCC4A8004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemoTests" */;
 			buildPhases = (
-				139EEC69BA4D1AD8A524B195 /* [CP] Check Pods Manifest.lock */,
-				A25097CC21CC3B2A004C9836 /* Sources */,
-				A25097CD21CC3B2A004C9836 /* Frameworks */,
-				A25097CE21CC3B2A004C9836 /* Resources */,
-				863B721358D47CD17FA7B8AA /* [CP] Embed Pods Frameworks */,
+				A19D54DFAA2CC97C3FE82FF0 /* [CP] Check Pods Manifest.lock */,
+				A250982221CCC4A8004C9836 /* Sources */,
+				A250982321CCC4A8004C9836 /* Frameworks */,
+				A250982421CCC4A8004C9836 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A25097D221CC3B2A004C9836 /* PBXTargetDependency */,
+				A250982821CCC4A8004C9836 /* PBXTargetDependency */,
 			);
 			name = QuickAndNimbleUnitTestingDemoTests;
 			productName = QuickAndNimbleUnitTestingDemoTests;
-			productReference = A25097D021CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */;
+			productReference = A250982621CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A25097B421CC3B29004C9836 /* Project object */ = {
+		A250980A21CCC4A6004C9836 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jason Son";
 				TargetAttributes = {
-					A25097BB21CC3B29004C9836 = {
+					A250981121CCC4A6004C9836 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					A25097CF21CC3B2A004C9836 = {
+					A250982521CCC4A8004C9836 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A25097BB21CC3B29004C9836;
+						TestTargetID = A250981121CCC4A6004C9836;
 					};
 				};
 			};
-			buildConfigurationList = A25097B721CC3B29004C9836 /* Build configuration list for PBXProject "QuickAndNimbleUnitTestingDemo" */;
+			buildConfigurationList = A250980D21CCC4A6004C9836 /* Build configuration list for PBXProject "QuickAndNimbleUnitTestingDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,29 +195,29 @@
 				en,
 				Base,
 			);
-			mainGroup = A25097B321CC3B29004C9836;
-			productRefGroup = A25097BD21CC3B29004C9836 /* Products */;
+			mainGroup = A250980921CCC4A6004C9836;
+			productRefGroup = A250981321CCC4A6004C9836 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A25097BB21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo */,
-				A25097CF21CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests */,
+				A250981121CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo */,
+				A250982521CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A25097BA21CC3B29004C9836 /* Resources */ = {
+		A250981021CCC4A6004C9836 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25097CA21CC3B2A004C9836 /* LaunchScreen.storyboard in Resources */,
-				A25097C721CC3B2A004C9836 /* Assets.xcassets in Resources */,
-				A25097C521CC3B29004C9836 /* Main.storyboard in Resources */,
+				A250982021CCC4A7004C9836 /* LaunchScreen.storyboard in Resources */,
+				A250981D21CCC4A7004C9836 /* Assets.xcassets in Resources */,
+				A250981B21CCC4A6004C9836 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A25097CE21CC3B2A004C9836 /* Resources */ = {
+		A250982421CCC4A8004C9836 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,7 +227,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04AAD7A0FFA0F8AA184E16D3 /* [CP] Check Pods Manifest.lock */ = {
+		089495F1E82C98A77FADBADE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,7 +249,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		139EEC69BA4D1AD8A524B195 /* [CP] Check Pods Manifest.lock */ = {
+		A19D54DFAA2CC97C3FE82FF0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,74 +271,49 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		863B721358D47CD17FA7B8AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickAndNimbleUnitTestingDemoTests/Pods-QuickAndNimbleUnitTestingDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A25097B821CC3B29004C9836 /* Sources */ = {
+		A250980E21CCC4A6004C9836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25097C221CC3B29004C9836 /* HomeViewController.swift in Sources */,
-				A25097C021CC3B29004C9836 /* AppDelegate.swift in Sources */,
+				A250981821CCC4A6004C9836 /* ViewController.swift in Sources */,
+				A250981621CCC4A6004C9836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A25097CC21CC3B2A004C9836 /* Sources */ = {
+		A250982221CCC4A8004C9836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25097D521CC3B2A004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift in Sources */,
-				A25097E121CC3CEC004C9836 /* CurrentWeatherSpecs.swift in Sources */,
+				A250982B21CCC4A8004C9836 /* QuickAndNimbleUnitTestingDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A25097D221CC3B2A004C9836 /* PBXTargetDependency */ = {
+		A250982821CCC4A8004C9836 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A25097BB21CC3B29004C9836 /* QuickAndNimbleUnitTestingDemo */;
-			targetProxy = A25097D121CC3B2A004C9836 /* PBXContainerItemProxy */;
+			target = A250981121CCC4A6004C9836 /* QuickAndNimbleUnitTestingDemo */;
+			targetProxy = A250982721CCC4A8004C9836 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A25097C321CC3B29004C9836 /* Main.storyboard */ = {
+		A250981921CCC4A6004C9836 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A25097C421CC3B29004C9836 /* Base */,
+				A250981A21CCC4A6004C9836 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A25097C821CC3B2A004C9836 /* LaunchScreen.storyboard */ = {
+		A250981E21CCC4A7004C9836 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A25097C921CC3B2A004C9836 /* Base */,
+				A250981F21CCC4A7004C9836 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -358,7 +321,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A25097D721CC3B2A004C9836 /* Debug */ = {
+		A250982D21CCC4A8004C9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -419,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		A25097D821CC3B2A004C9836 /* Release */ = {
+		A250982E21CCC4A8004C9836 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -464,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -474,12 +437,13 @@
 			};
 			name = Release;
 		};
-		A25097DA21CC3B2A004C9836 /* Debug */ = {
+		A250983021CCC4A8004C9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D89A491CD5CA1B21324B46EE /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */;
+			baseConfigurationReference = CB26C0A8E8C7D9482254F23F /* Pods-QuickAndNimbleUnitTestingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5R6Y23THY4;
 				INFOPLIST_FILE = QuickAndNimbleUnitTestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,12 +457,13 @@
 			};
 			name = Debug;
 		};
-		A25097DB21CC3B2A004C9836 /* Release */ = {
+		A250983121CCC4A8004C9836 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 739A1AAF04E8ADC68BA4FCDC /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */;
+			baseConfigurationReference = 0F31D5F0659C92E395C0CB14 /* Pods-QuickAndNimbleUnitTestingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5R6Y23THY4;
 				INFOPLIST_FILE = QuickAndNimbleUnitTestingDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,9 +477,9 @@
 			};
 			name = Release;
 		};
-		A25097DD21CC3B2A004C9836 /* Debug */ = {
+		A250983321CCC4A8004C9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D541CC700783DF4AA415521D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 6C37EB520A688658CA55329D /* Pods-QuickAndNimbleUnitTestingDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,9 +499,9 @@
 			};
 			name = Debug;
 		};
-		A25097DE21CC3B2A004C9836 /* Release */ = {
+		A250983421CCC4A8004C9836 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5C57AB6A497A1AFC8CC57D2 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */;
+			baseConfigurationReference = 30592B14A86FBAC8B1DBEEE9 /* Pods-QuickAndNimbleUnitTestingDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,34 +524,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A25097B721CC3B29004C9836 /* Build configuration list for PBXProject "QuickAndNimbleUnitTestingDemo" */ = {
+		A250980D21CCC4A6004C9836 /* Build configuration list for PBXProject "QuickAndNimbleUnitTestingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A25097D721CC3B2A004C9836 /* Debug */,
-				A25097D821CC3B2A004C9836 /* Release */,
+				A250982D21CCC4A8004C9836 /* Debug */,
+				A250982E21CCC4A8004C9836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A25097D921CC3B2A004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemo" */ = {
+		A250982F21CCC4A8004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A25097DA21CC3B2A004C9836 /* Debug */,
-				A25097DB21CC3B2A004C9836 /* Release */,
+				A250983021CCC4A8004C9836 /* Debug */,
+				A250983121CCC4A8004C9836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A25097DC21CC3B2A004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemoTests" */ = {
+		A250983221CCC4A8004C9836 /* Build configuration list for PBXNativeTarget "QuickAndNimbleUnitTestingDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A25097DD21CC3B2A004C9836 /* Debug */,
-				A25097DE21CC3B2A004C9836 /* Release */,
+				A250983321CCC4A8004C9836 /* Debug */,
+				A250983421CCC4A8004C9836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A25097B421CC3B29004C9836 /* Project object */;
+	rootObject = A250980A21CCC4A6004C9836 /* Project object */;
 }
