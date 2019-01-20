@@ -15,6 +15,9 @@
 - Used **UIView.animate** & **NSLayoutConstraints** for show/hide DatePicker
 - Used **Extension** to make the code look clean and nice
 
+## DelegateWithProtocolDemo
+- Used **protocol** design pattern to pass data from ViewControllerB to A 
+
 ## Documents 
 - Something useful to read about Swift & Xcode
 
